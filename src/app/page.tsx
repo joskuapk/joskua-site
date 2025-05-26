@@ -1,3 +1,4 @@
+import MotionSection from "@/components/common/MotionSection";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
@@ -10,12 +11,24 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full">
       <Hero />
-      <About />
-      <WhatIDo />
-      <TechStack />
-      <ProjectsExperience />
-      <Results />
-      <Contact />
+      <MotionSection>
+        <About />
+      </MotionSection>
+      <MotionSection>
+        <WhatIDo />
+      </MotionSection>
+      <MotionSection>
+        <TechStack />
+      </MotionSection>
+      <MotionSection>
+        <ProjectsExperience />
+      </MotionSection>
+      <MotionSection>
+        <Results />
+      </MotionSection>
+      <MotionSection>
+        <Contact />
+      </MotionSection>
     </div>
   );
 }
