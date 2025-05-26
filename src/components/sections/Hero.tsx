@@ -10,7 +10,7 @@ export default function Hero() {
         I’m Joskua — a full-stack developer who builds clean, scalable web apps,
         automations, and digital tools with purpose.
       </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
           href="#contact"
           className="px-6 py-3 bg-lemon-green text-deep-blue rounded font-semibold hover:opacity-90 transition"

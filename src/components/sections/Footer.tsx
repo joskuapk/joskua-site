@@ -2,6 +2,11 @@
 export default function Footer() {
   return (
     <footer className="mt-16 w-full border-t border-light-blue text-light-blue text-sm text-center py-6">
+      <img
+        src="/joskuaBanner.svg"
+        alt="Joskua logo"
+        className="mx-auto mb-4 h-8"
+      />
       <p>
         Made with 💻 by{" "}
         <span className="text-lemon-green font-semibold">Joskua</span>
