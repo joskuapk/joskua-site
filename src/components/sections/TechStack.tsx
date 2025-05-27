@@ -24,7 +24,7 @@ export default function TechStack() {
     ));
 
   return (
-    <section className="w-full px-6 py-24 max-w-5xl mx-auto text-left">
+    <section className="w-full px-6  max-w-5xl mx-auto text-left">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Tech Stack</h2>
 
       <div className="mb-10">

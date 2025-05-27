@@ -3,6 +3,6 @@
 /* Tailwind v4 uses @theme to define custom tokens */
 @theme {
   --color-deep-blue: #141b41;
-  --color-lemon-green: #7ee081;
+  --color-lemon-green: #67b56a;
   --color-light-blue: #bce7fd;
 }

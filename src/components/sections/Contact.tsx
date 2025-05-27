@@ -2,10 +2,7 @@
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="w-full px-6 py-24 max-w-3xl mx-auto text-left"
-    >
+    <section id="contact" className="w-full px-6 max-w-3xl mx-auto text-left">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">
         Let’s Work Together
       </h2>

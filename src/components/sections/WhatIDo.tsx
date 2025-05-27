@@ -9,7 +9,7 @@ export default function WhatIDo() {
   ];
 
   return (
-    <section className="w-full px-6 py-24 max-w-5xl mx-auto text-left">
+    <section className="w-full px-6 max-w-5xl mx-auto text-left">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">What I Do</h2>
       <p className="text-base md:text-lg mb-10 text-light-blue">
         I help founders, businesses, and teams turn ideas into working software.
