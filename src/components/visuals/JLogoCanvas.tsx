@@ -37,8 +37,8 @@ function JLetter() {
     <primitive
       ref={ref}
       object={scene}
-      scale={150}
-      position={[-15, -20, 0]}
+      scale={50}
+      position={[-5, -5, 0]}
       rotation={[Math.PI / 2, 0, 0]}
     />
   );
