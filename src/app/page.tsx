@@ -6,11 +6,13 @@ import ProjectsExperience from "@/components/sections/ProjectsExperience";
 import Results from "@/components/sections/Results";
 import TechStack from "@/components/sections/TechStack";
 import WhatIDo from "@/components/sections/WhatIDo";
+import JLogoCanvas from "@/components/visuals/JLogoCanvas";
 
 export default function Home() {
   return (
     <div className="min-h-screen w-full">
       <Hero />
+      <JLogoCanvas />
       <MotionSection>
         <About />
       </MotionSection>
