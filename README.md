@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Joskua.dev — Personal Portfolio Site
 
-## Getting Started
+This is the personal portfolio of **Joskua**, a full-stack developer based in Mexico City. The project showcases not only my work but also my technical capabilities across modern frontend and backend technologies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔧 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+  - Uses theming and utility-first design
+- **3D Graphics**: [Three.js](https://threejs.org/) via [react-three-fiber](https://docs.pmnd.rs/react-three-fiber/)
+  - Custom extruded `J` logo created in Blender from SVG
+- **Language**: TypeScript (strictly across all components)
+- **Email Delivery**: [Resend](https://resend.com/)
+  - Contact form powered by serverless Vercel API route (`/api/contact`)
+  - Validated DNS, DKIM, SPF, and MX records
+- **DNS & SSL**: [Cloudflare](https://cloudflare.com/)
+  - DNS hosting, proxying, and SSL management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Hosting & Deployment
 
-## Learn More
+- **Hosted On**: [Vercel](https://vercel.com/)
+  - CI/CD with GitHub integration
+  - Auto-deploy on push to `main`
+- **Domain**: [joskua.space](https://www.joskua.space/)
+- **Environment Variables**:
+  - Securely managed in Vercel dashboard for API keys
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Purpose & Message
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This site is built to present myself as a **hireable**, **independent**, and **technically capable** developer. It aims to communicate:
 
-## Deploy on Vercel
+> “I can take a project from idea to production — cleanly, creatively, and completely solo if needed.”
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Designed from scratch, no template used
+- Responsive layout (Tailwind handles breakpoints)
+- Highlights innovation through simple 3D & animations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ✉️ Contact Form
+
+- Submits data through a secure Vercel Edge Function
+- Uses the Resend API to email submissions
+- Spam protection handled by Resend
+- No data stored on the backend
+
+---
+
+## 🧪 Notable Technical Aspects
+
+✅ App Router + Server Components (Next.js)  
+✅ Tailwind v4 + Theme customization  
+✅ 3D + Blender workflow integration  
+✅ Environment-based behavior  
+✅ DNS troubleshooting and Cloudflare migration  
+✅ Deployment via Vercel GitHub CI
