@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Joskua | Portafolio de Desarrollador",
+    "description": "Desarrollador con sede en Ciudad de México. Creo aplicaciones web limpias y escalables, automatizaciones y herramientas digitales con propósito."
+  },
+  "hero": {
+    "title": "La tecnología debe servir a la humanidad.",
+    "description": "Soy Joskua, un desarrollador full-stack que crea aplicaciones web limpias y escalables, automatizaciones y herramientas digitales con propósito.",
+    "cta": {
+      "work": "Trabajemos Juntos",
+      "cv": "Descargar Mi CV"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Hola, soy Joskua, un desarrollador freelance con sede en Ciudad de México. Creo que la tecnología debe hacer la vida más fácil, más inteligente y más humana.",
+    "description2": "Durante más de 5 años he trabajado con equipos en EE.UU., México, Centroamérica y Asia, construyendo sistemas reales que impulsan programas de lealtad, optimizan procesos de negocio y hacen realidad nuevas ideas.",
+    "description3": "He liderado equipos de desarrollo, lanzado apps multiplataforma e integrado soluciones con sistemas POS y plataformas de pago, siempre con enfoque en código limpio, usabilidad e impacto.",
+    "languages": "Idiomas que hablo con fluidez: español, inglés, francés"
+  },
+  "whatIDo": {
+    "title": "Lo Que Hago",
+    "description": "Ayudo a fundadores, empresas y equipos a convertir ideas en software funcional.",
+    "services": {
+      "1": "Desarrollo de aplicaciones web personalizadas (React, Flutter, .NET)",
+      "2": "Scripting y automatización con Python",
+      "3": "Prototipado UI/UX (Figma)",
+      "4": "Web scraping y recolección de datos",
+      "5": "Desarrollo de dashboards (SQL, pandas)",
+      "6": "Integración de APIs y lógica backend"
+    }
+  },
+  "techStack": {
+    "title": "Tecnologías",
+    "favorites": "Favoritas",
+    "others": "También con Experiencia en"
+  },
+  "projects": {
+    "title": "Proyectos y Experiencia",
+    "1": {
+      "title": "App QuantumGo",
+      "description": "App móvil en Flutter lanzada en varios países para programación de técnicos."
+    },
+    "2": {
+      "title": "App Nexus Clover",
+      "description": "App Android para integración de lealtad en POS, construida con Clover SDK y backend personalizado."
+    },
+    "3": {
+      "title": "Integraciones con Fiserv",
+      "description": "Manejo de APIs de pago alojado y transacciones presenciales para una fintech Fortune 500."
+    },
+    "4": {
+      "title": "Automatización y Herramientas Internas",
+      "description": "Dashboards, scrapers y herramientas internas para optimizar operaciones en América."
+    }
+  },
+  "results": {
+    "title": "Resultados que Importan",
+    "1": {
+      "value": "350%",
+      "label": "de mejora en el rendimiento del sistema de correos"
+    },
+    "2": {
+      "value": "50%",
+      "label": "de reducción en tiempos de consulta backend"
+    },
+    "3": {
+      "value": "39+",
+      "label": "sucursales físicas con lealtad escalada"
+    },
+    "4": {
+      "value": "↓ 26%",
+      "label": "reducción en tasa de tickets de soporte (de 34% a 26%)"
+    },
+    "5": {
+      "value": "3 Países",
+      "label": "lanzamientos exitosos de apps (EE.UU., México, CR)"
+    }
+  },
+  "contact": {
+    "title": "Trabajemos Juntos",
+    "description": "¿Tienes un proyecto en mente? Hablemos.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "madeWith": "Hecho con 💻 por",
+    "shortVersion": "¿Prefieres la versión corta?",
+    "downloadCV": "Descarga mi CV",
+    "emailMe": "Envíame un correo directamente"
+  }
+}

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Footer from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
+import IntlProviderWrapper from "@/components/common/IntlProviderWrapper";
+import { notFound } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,21 +43,33 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
+  let messages;
+  try {
+    messages = (await import(`../../../public/locales/${locale}/messages.json`))
+      .default;
+  } catch (error) {
+    notFound();
+  }
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-deep-blue text-lemon-green`}
       >
-        <Header />
-        <main className="min-h-screen w-full flex flex-col items-center justify-start">
-          {children}
-        </main>
-        <Footer />
+        <IntlProviderWrapper messages={messages} locale={locale}>
+          <Header />
+          <main className="min-h-screen w-full flex flex-col items-center justify-start">
+            {children}
+          </main>
+          <Footer />
+        </IntlProviderWrapper>
       </body>
     </html>
   );

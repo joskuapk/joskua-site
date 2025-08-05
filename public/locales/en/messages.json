@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Joskua | Developer Portfolio",
+    "description": "Developer based in Mexico City. I build clean, scalable web apps, automations, and digital tools with purpose."
+  },
+  "hero": {
+    "title": "Technology should serve humanity.",
+    "description": "I’m Joskua — a full-stack developer who builds clean, scalable web apps, automations, and digital tools with purpose.",
+    "cta": {
+      "work": "Let’s Work Together",
+      "cv": "Download My CV"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Hi, I’m Joskua — a freelance developer based in Mexico City. I believe that technology should make life easier, smarter, and more human.",
+    "description2": "Over the past 5+ years, I’ve worked with teams across the US, Mexico, Central America and Asia, building real-world systems that power loyalty programs, optimize business processes, and bring ideas to life.",
+    "description3": "I’ve led development teams, launched cross-platform apps, and integrated solutions with POS systems and payment platforms — always with a focus on clean code, usability, and impact.",
+    "languages": "Languages I speak fluently: Spanish, English, French"
+  },
+  "whatIDo": {
+    "title": "What I Do",
+    "description": "I help founders, businesses, and teams turn ideas into working software.",
+    "services": {
+      "1": "Custom web app development (React, Flutter, .NET)",
+      "2": "Python scripting & automation",
+      "3": "UI/UX prototyping (Figma)",
+      "4": "Web scraping & data collection",
+      "5": "Dashboard development (SQL, pandas)",
+      "6": "API integration & backend logic"
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "favorites": "Favorites",
+    "others": "Also Experienced In"
+  },
+  "projects": {
+    "title": "Projects & Experience",
+    "1": {
+      "title": "QuantumGo App",
+      "description": "A Flutter mobile app launched in multiple countries for technician scheduling."
+    },
+    "2": {
+      "title": "Nexus Clover App",
+      "description": "An Android app for POS loyalty integration, built with the Clover SDK and custom backend logic."
+    },
+    "3": {
+      "title": "Fiserv Integrations",
+      "description": "Handled hosted payment and card-present transaction APIs for a Fortune 500 fintech company."
+    },
+    "4": {
+      "title": "Automation & Internal Tools",
+      "description": "Built dashboards, web scrapers, and internal tools to streamline operations across the Americas."
+    }
+  },
+  "results": {
+    "title": "Results That Matter",
+    "1": {
+      "value": "350%",
+      "label": "increase in email system performance"
+    },
+    "2": {
+      "value": "50%",
+      "label": "faster backend query times"
+    },
+    "3": {
+      "value": "39+",
+      "label": "physical store locations scaled with loyalty"
+    },
+    "4": {
+      "value": "↓ 26%",
+      "label": "incident ticket rate from 34% to 26%"
+    },
+    "5": {
+      "value": "3 Countries",
+      "label": "successful app launches (US, MX, CR)"
+    }
+  },
+  "contact": {
+    "title": "Let’s Work Together",
+    "description": "Have a project in mind? Let’s talk.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "madeWith": "Made with 💻 by",
+    "shortVersion": "Want the short version?",
+    "downloadCV": "Download my CV",
+    "emailMe": "Email me directly"
+  }
+}
