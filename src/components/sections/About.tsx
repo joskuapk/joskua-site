@@ -1,21 +1,24 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function About() {
+  const t = useTranslations("about");
+
   return (
     <section className="w-full px-6 max-w-5xl mx-auto text-left">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">{t("title")}</h2>
       <p className="text-base md:text-lg mb-4 text-light-blue">
-        Hi, I’m Joskua — a freelance developer based in Mexico City. I believe
-        that technology should make life easier, smarter, and more human. Over
-        the past 5+ years, I’ve worked with teams across the US, Mexico, Central
-        America and Asia, building real-world systems that power loyalty
-        programs, optimize business processes, and bring ideas to life.
+        {t("description1")}
       </p>
       <p className="text-base md:text-lg mb-4 text-light-blue">
-        I’ve led development teams, launched cross-platform apps, and integrated
-        solutions with POS systems and payment platforms — always with a focus
-        on clean code, usability, and impact.
+        {t("description2")}
+      </p>
+      <p className="text-base md:text-lg mb-4 text-light-blue">
+        {t("description3")}
       </p>
       <p className="text-base md:text-lg font-semibold text-lemon-green">
-        Languages I speak fluently: Spanish, English, French
+        {t("languages")}
       </p>
     </section>
   );

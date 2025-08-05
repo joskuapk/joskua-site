@@ -6,14 +6,14 @@ import { ReactNode } from "react";
 export default function IntlProviderWrapper({
   children,
   messages,
-  locale,
+  lang,
 }: {
   children: ReactNode;
   messages: Record<string, string>;
-  locale: string;
+  lang: string;
 }) {
   return (
-    <NextIntlClientProvider messages={messages} locale={locale}>
+    <NextIntlClientProvider messages={messages} locale={lang}>
       {children}
     </NextIntlClientProvider>
   );

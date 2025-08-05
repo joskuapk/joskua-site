@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -57,16 +59,14 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full px-6 max-w-3xl mx-auto text-left">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">
-        Let’s Work Together
+        {t("contact.title")}
       </h2>
-      <p className="text-light-blue mb-10">
-        Have a project in mind? Let’s talk.
-      </p>
+      <p className="text-light-blue mb-10">{t("contact.description")}</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder={t("contact.form.name")}
           className="px-4 py-3 rounded border border-lemon-green bg-transparent placeholder-light-blue text-white"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -75,7 +75,7 @@ export default function Contact() {
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder={t("contact.form.email")}
           className="px-4 py-3 rounded border border-lemon-green bg-transparent placeholder-light-blue text-white"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -83,7 +83,7 @@ export default function Contact() {
         />
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder={t("contact.form.message")}
           rows={4}
           className="px-4 py-3 rounded border border-lemon-green bg-transparent placeholder-light-blue text-white"
           value={message}
@@ -99,7 +99,7 @@ export default function Contact() {
           type="submit"
           className="px-6 py-3 bg-lemon-green bg-opacity-90 text-deep-blue rounded font-semibold hover:bg-opacity-80 transition"
         >
-          Send Message
+          {t("contact.form.submit")}
         </button>
         {status && (
           <div
@@ -110,8 +110,8 @@ export default function Contact() {
             <div className="flex items-center justify-between gap-4">
               <span>
                 {status === "success"
-                  ? "Message sent successfully!"
-                  : "Something went wrong. Please try again."}
+                  ? t("contact.success")
+                  : t("contact.error")}
               </span>
               <button
                 onClick={() => {

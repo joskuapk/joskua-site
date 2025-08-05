@@ -45,25 +45,27 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale },
-}: {
+  params,
+}: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
-}) {
+  params: Promise<{ lang: string }>;
+}>) {
+  const { lang } = await params;
+
   let messages;
   try {
-    messages = (await import(`../../../public/locales/${locale}/messages.json`))
+    messages = (await import(`../../../public/locales/${lang}/messages.json`))
       .default;
   } catch (error) {
     notFound();
   }
 
   return (
-    <html lang={locale}>
+    <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-deep-blue text-lemon-green`}
       >
-        <IntlProviderWrapper messages={messages} locale={locale}>
+        <IntlProviderWrapper messages={messages} lang={lang}>
           <Header />
           <main className="min-h-screen w-full flex flex-col items-center justify-start">
             {children}

@@ -1,31 +1,32 @@
+"use client";
+import { useTranslations } from "next-intl";
+
 export default function ProjectsExperience() {
+  const t = useTranslations();
+
   const projects = [
     {
-      title: "QuantumGo App",
-      description:
-        "A Flutter mobile app launched in multiple countries for technician scheduling.",
+      title: t("projects.1.title"),
+      description: t("projects.1.description"),
     },
     {
-      title: "Nexus Clover App",
-      description:
-        "An Android app for POS loyalty integration, built with the Clover SDK and custom backend logic.",
+      title: t("projects.2.title"),
+      description: t("projects.2.description"),
     },
     {
-      title: "Fiserv Integrations",
-      description:
-        "Handled hosted payment and card-present transaction APIs for a Fortune 500 fintech company.",
+      title: t("projects.3.title"),
+      description: t("projects.3.description"),
     },
     {
-      title: "Automation & Internal Tools",
-      description:
-        "Built dashboards, web scrapers, and internal tools to streamline operations across the Americas.",
+      title: t("projects.4.title"),
+      description: t("projects.4.description"),
     },
   ];
 
   return (
     <section className="w-full px-6  max-w-5xl mx-auto text-left">
       <h2 className="text-3xl md:text-4xl font-bold mb-12">
-        Projects & Experience
+        {t("projects.title")}
       </h2>
       <div className="relative border-l-2 border-lemon-green pl-6 space-y-10">
         {projects.map((project, index) => (

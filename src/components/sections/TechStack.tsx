@@ -1,4 +1,9 @@
+"use client";
+import { useTranslations } from "next-intl";
+
 export default function TechStack() {
+  const t = useTranslations();
+
   const favorites = ["React", "Flutter", "Python", "REST APIs", "Figma", "SQL"];
   const experienced = [
     ".NET",
@@ -25,18 +30,20 @@ export default function TechStack() {
 
   return (
     <section className="w-full px-6  max-w-5xl mx-auto text-left">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">Tech Stack</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        {t("techStack.title")}
+      </h2>
 
       <div className="mb-10">
         <h3 className="text-xl font-semibold text-lemon-green mb-4">
-          Favorites
+          {t("techStack.favorites")}
         </h3>
         <div className="flex flex-wrap gap-3">{renderBadges(favorites)}</div>
       </div>
 
       <div>
         <h3 className="text-xl font-semibold text-lemon-green mb-4">
-          Also Experienced In
+          {t("techStack.others")}
         </h3>
         <div className="flex flex-wrap gap-3">{renderBadges(experienced)}</div>
       </div>
