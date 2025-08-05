@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
@@ -9,6 +9,27 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<null | "success" | "error">(null);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+
+  useEffect(() => {
+    let hideTimer: NodeJS.Timeout;
+    let resetTimer: NodeJS.Timeout;
+
+    if (status) {
+      setShowSnackbar(true);
+      hideTimer = setTimeout(() => {
+        setShowSnackbar(false);
+      }, 3500);
+      resetTimer = setTimeout(() => {
+        setStatus(null);
+      }, 4000);
+    }
+
+    return () => {
+      clearTimeout(hideTimer);
+      clearTimeout(resetTimer);
+    };
+  }, [status]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -76,17 +97,34 @@ export default function Contact() {
         />
         <button
           type="submit"
-          className="px-6 py-3 bg-lemon-green text-deep-blue rounded font-semibold hover:opacity-90 transition"
+          className="px-6 py-3 bg-lemon-green bg-opacity-90 text-deep-blue rounded font-semibold hover:bg-opacity-80 transition"
         >
           Send Message
         </button>
-        {status === "success" && (
-          <p className="text-green-400">Message sent successfully!</p>
-        )}
-        {status === "error" && (
-          <p className="text-red-400">
-            Something went wrong. Please try again.
-          </p>
+        {status && (
+          <div
+            className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded text-white font-medium transition-opacity duration-500 ease-in-out ${
+              status === "success" ? "bg-green-500/60" : "bg-red-500/60"
+            } ${showSnackbar ? "opacity-100" : "opacity-0"}`}
+          >
+            <div className="flex items-center justify-between gap-4">
+              <span>
+                {status === "success"
+                  ? "Message sent successfully!"
+                  : "Something went wrong. Please try again."}
+              </span>
+              <button
+                onClick={() => {
+                  setShowSnackbar(false);
+                  setTimeout(() => setStatus(null), 500);
+                }}
+                className="text-white font-bold ml-4"
+                aria-label="Close"
+              >
+                ×
+              </button>
+            </div>
+          </div>
         )}
       </form>
     </section>
