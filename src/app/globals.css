@@ -6,3 +6,28 @@
   --color-lemon-green: #67b56a;
   --color-light-blue: #bce7fd;
 }
+/* Body default */
+body {
+  font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* Headlines */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+h1 { font-size: 96px; line-height: 1.05; }
+h2 { font-size: 64px; line-height: 1.1; }
+h3 { font-size: 48px; line-height: 1.15; }
+h4 { font-size: 40px; line-height: 1.2; }
+h5 { font-size: 36px; line-height: 1.2; }
+h6 { font-size: 32px; line-height: 1.25; }
+
+/* Nav / UI accents */
+.nav-button,
+code,
+kbd {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

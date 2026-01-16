@@ -1,20 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Silkscreen, Inter, IBM_Plex_Mono } from "next/font/google";
 import "../globals.css";
 import Footer from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import IntlProviderWrapper from "@/components/common/IntlProviderWrapper";
 import { notFound } from "next/navigation";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontDisplay = Silkscreen({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontBody = Inter({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
 });
+
+const fontMono = IBM_Plex_Mono({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 
 export const metadata: Metadata = {
   title: "Joskua | Developer Portfolio",
@@ -63,7 +75,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-deep-blue text-lemon-green`}
+        className={`${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable} antialiased bg-deep-blue text-lemon-green`}
       >
         <IntlProviderWrapper messages={messages} lang={lang}>
           <Header />
