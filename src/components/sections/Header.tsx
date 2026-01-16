@@ -7,13 +7,13 @@ export function Header() {
       <div aria-label="Language selector" className="flex gap-3">
         <Link href="/en">
           <span className="" role="img" aria-label="English">
-            EN 🇺🇸
+            EN
           </span>
         </Link>
         <span>|</span>
         <Link href="/es">
           <span className="" role="img" aria-label="Español">
-            ES 🇲🇽
+            ES
           </span>
         </Link>
       </div>
