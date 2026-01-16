@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import GlassCard from "../common/GlassCard";
 
 export default function Hero() {
   const t = useTranslations();
 
   return (
     <section className="hero-section flex flex-col items-center justify-center p-20">
-      <div className="hero-card flex flex-col items-center justify-center gap-4 p-8">
+<GlassCard className="flex flex-col items-center justify-center p-15">
         <h1 aria-label="Hero title" className="hero-title py-8 max-w-250 text-center">
           <span>{t("hero.titleLine1")}</span>
           <span>{t("hero.titleLine2")}</span>
@@ -22,10 +23,10 @@ export default function Hero() {
             ),
           })}
         </p>
-        <p className="">
+        <p className="py-4">
           {t("hero.tagline")}
         </p>
-        <div aria-label="Hero actions" className="inline-flex gap-4">
+        <div aria-label="Hero actions" className="inline-flex gap-4 py-4">
           <div className="hero-action-btn">
             <a
               href="#contact"
@@ -47,7 +48,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-      </div>
+</GlassCard>
     </section>
   );
 

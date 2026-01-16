@@ -82,6 +82,8 @@ kbd {
    HERO TYPOGRAPHY
 ========================= */
 
+
+
 .hero-section {
   position: relative;
   background:
@@ -121,13 +123,11 @@ kbd {
   }
 }
 
-
-
-.hero-title h1 {
+.hero-title {
   font-family: var(--font-display), system-ui, sans-serif;
 
   /* Responsive, prevents overflow */
-  font-size: clamp(36px, 7vw, 48px);
+  font-size: clamp(1rem, 7vw, 3.5rem);
 
   line-height: 1.05;
   letter-spacing: 0.01em;
@@ -152,26 +152,123 @@ kbd {
 }
 
 
-.hero-action-btn{
+.hero-action-btn {
   color: var(--text-400);
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
-.hero-action-btn .contact-btn{
+
+.hero-action-btn .nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+
+  background: transparent;
+  color: inherit;
+
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Primary CTA */
+.hero-action-btn .contact-btn {
   background-color: var(--primary-500);
-  border-radius: 5px;
+  color: var(--text-on-primary, #0b0f1a);
 }
+
+/* ✨ Hover effect */
+.hero-action-btn:hover {
+  transform: scale(1.06);
+}
+
+.hero-action-btn:hover .nav-button {
+  background-color: var(--primary-400);
+  color: var(--text-on-primary, #0b0f1a);
+
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--primary-400) 45%, transparent),
+    0 0 28px color-mix(in srgb, var(--primary-400) 30%, transparent);
+}
+
+/* Optional: active (click) feedback */
+.hero-action-btn:active {
+  transform: scale(0.98);
+}
+
 
 header{
   background-color: var(--background-500);
 }
 
-.hero-card {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px) saturate(100%);
-  -webkit-backdrop-filter: blur(15px) saturate(100%); /* Keep vendor prefix */
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #333333;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+.glass-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  transition: opacity 0.26s ease-out;
+
+  /* Base shadow (depth) */
+  filter:
+    drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45))
+    drop-shadow(0 0 24px color-mix(in srgb, var(--primary-500) 35%, transparent));
+
+  backdrop-filter:
+    brightness(1.1)
+    blur(3px)
+    var(--glass-filter);
+
+  -webkit-backdrop-filter:
+    brightness(1.1)
+    blur(3px)
+    var(--glass-filter);
 }
+
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  /* Glass tint */
+  background: rgba(255, 255, 255, 0.06);
+
+  /* Neon edge glow */
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--primary-500) 45%, transparent),
+    inset 0 0 18px color-mix(in srgb, var(--primary-500) 30%, transparent),
+    inset 0 0 40px color-mix(in srgb, var(--primary-500) 15%, transparent),
+    inset 6px 6px 0 -6px rgba(255, 255, 255, 0.5);
+
+  /* Subtle neon bloom */
+  filter: drop-shadow(
+    0 0 18px color-mix(in srgb, var(--primary-500) 40%, transparent)
+  );
+}
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      120% 90% at 10% 10%,
+      color-mix(in srgb, var(--primary-500) 35%, transparent),
+      transparent 60%
+    );
+
+  opacity: 0.6;
+  mix-blend-mode: screen;
+}
+
+
 
 
