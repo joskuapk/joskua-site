@@ -6,45 +6,49 @@ export default function Hero() {
   const t = useTranslations();
 
   return (
-  <section className="w-full px-6 py-24 max-w-5xl mx-auto text-center">
-    <h1 className="mb-8 leading-tight">
-      {t("hero.title")}
-    </h1>
-
-    <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto leading-relaxed text-light-blue">
-      {t.rich("hero.description", {
-        name: (chunks) => (
-          <span className="text-lemon-green">{chunks}</span>
-        ),
-        accent: (chunks) => (
-          <span className="text-lemon-green">{chunks}</span>
-        ),
-      })}
-    </p>
-
-    <p className="text-base md:text-lg mb-12 max-w-2xl mx-auto text-light-blue/80">
-      {t("hero.tagline")}
-    </p>
-
-    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-      <a
-        href="#contact"
-        className="px-6 py-3 bg-lemon-green text-deep-blue rounded font-semibold hover:opacity-90 transition"
-      >
-        {t("hero.cta.work")}
-      </a>
-
-      <Link
-        href="/CV_Joskua_Olivares.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className="px-6 py-3 border border-lemon-green text-lemon-green rounded font-semibold hover:bg-lemon-green hover:text-deep-blue transition">
-          {t("hero.cta.cv")}
-        </span>
-      </Link>
-    </div>
-  </section>
-);
+    <section className="hero-section flex flex-col items-center justify-center p-20">
+      <div className="hero-card flex flex-col items-center justify-center gap-4 p-8">
+        <h1 aria-label="Hero title" className="hero-title py-8 max-w-250 text-center">
+          <span>{t("hero.titleLine1")}</span>
+          <span>{t("hero.titleLine2")}</span>
+        </h1>
+        <p aria-label="Hero description" className="hero-description max-w-250">
+          {t.rich("hero.description", {
+            name: (chunks) => (
+              <span className="name">{chunks}</span>
+            ),
+            accent: (chunks) => (
+              <span className="accent">{chunks}</span>
+            ),
+          })}
+        </p>
+        <p className="">
+          {t("hero.tagline")}
+        </p>
+        <div aria-label="Hero actions" className="inline-flex gap-4">
+          <div className="hero-action-btn">
+            <a
+              href="#contact"
+              className="nav-button contact-btn px-4 py-2"
+            >
+              {t("hero.cta.work")}
+            </a>
+          </div>
+          <div className="hero-action-btn">
+            <Link
+              href="/CV_Joskua_Olivares.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-button"
+            >
+              <span>
+                {t("hero.cta.cv")}
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 
 }

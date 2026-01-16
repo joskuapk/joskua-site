@@ -1,21 +1,67 @@
 @import "tailwindcss";
 
-/* Tailwind v4 uses @theme to define custom tokens */
-@theme {
-  --color-deep-blue: #141b41;
-  --color-lemon-green: #67b56a;
-  --color-light-blue: #bce7fd;
+/* --------------------------
+   Design Tokens (source of truth)
+   -------------------------- */
+:root {
+  /* Text */
+  --text-500: #A9C7B0;
+  --text-400: #E6F2E7;
+
+  /* Primary (green) */
+  --primary-500: #67B56A;
+  --primary-400: #7EE081;
+
+  /* Background (deep blue) */
+  --background-500: #141B41;
+  --background-400: #3E52BC;
+
+  /* Accent 1 (cyan) */
+  --accent1-500: #52E3F6;
+
+  /* Accent 2 (red) */
+  --accent2-500: #E63946;
 }
-/* Body default */
+/* Tailwind v4 token mapping */
+@theme {
+  /* Text */
+  --color-text-500: var(--text-500);
+  --color-text-400: var(--text-400);
+
+  /* Primary */
+  --color-primary-500: var(--primary-500);
+  --color-primary-400: var(--primary-400);
+
+  /* Background */
+  --color-background-500: var(--background-500);
+  --color-background-400: var(--background-400);
+
+  /* Accent 1 */
+  --color-accent1-500: var(--accent1-500);
+
+  /* Accent 2 */
+  --color-accent2-500: var(--accent2-500);
+}
 body {
+  background-color: var(--background-500);
+  color: var(--text-500);
+}
+/* --------------------------
+   Typography Styles
+   -------------------------- */
+
+/* Body default */
+p {
   font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-size: 20px;
+  color: var(--text-500);
 }
 
 /* Headlines */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display), system-ui, sans-serif;
   letter-spacing: 0.02em;
+  color: var(--primary-500);
 }
 
 h1 { font-size: 96px; line-height: 1.05; }
@@ -31,3 +77,101 @@ code,
 kbd {
   font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
+/* =========================
+   HERO TYPOGRAPHY
+========================= */
+
+.hero-section {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(103, 181, 106, 0.14),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(188, 231, 253, 0.12),
+      transparent 45%
+    ),
+    #141B41;
+
+  animation: heroGradient 18s ease-in-out infinite;
+}
+
+/* Perfect loop animation */
+@keyframes heroGradient {
+  0% {
+    background-position:
+      0% 0%,
+      100% 0%;
+  }
+
+  50% {
+    background-position:
+      10% 5%,
+      90% 10%;
+  }
+
+  100% {
+    background-position:
+      0% 0%,
+      100% 0%;
+  }
+}
+
+
+
+.hero-title h1 {
+  font-family: var(--font-display), system-ui, sans-serif;
+
+  /* Responsive, prevents overflow */
+  font-size: clamp(36px, 7vw, 48px);
+
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+
+  text-align: center;
+
+  /* Prevent Silkscreen word splits */
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-description .name {
+  color: var(--primary-500);
+}
+
+.hero-description .accent {
+  color: var(--primary-500);
+}
+
+
+.hero-action-btn{
+  color: var(--text-400);
+}
+.hero-action-btn .contact-btn{
+  background-color: var(--primary-500);
+  border-radius: 5px;
+}
+
+header{
+  background-color: var(--background-500);
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px) saturate(100%);
+  -webkit-backdrop-filter: blur(15px) saturate(100%); /* Keep vendor prefix */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #333333;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+
