@@ -4,13 +4,16 @@
     "description": "Desarrollador con sede en Ciudad de México. Creo aplicaciones web limpias y escalables, automatizaciones y herramientas digitales con propósito."
   },
   "hero": {
-    "title": "La tecnología debe servir a la humanidad.",
-    "description": "Soy Joskua, un desarrollador full-stack que crea aplicaciones web limpias y escalables, automatizaciones y herramientas digitales con propósito.",
-    "cta": {
-      "work": "Trabajemos Juntos",
-      "cv": "Descargar Mi CV"
-    }
-  },
+  "titleLine1": "Construyo software moderno",
+  "titleLine2": "que funciona en el mundo real.",
+  "description": "Soy <name>Joskua Olivares</name> — un ingeniero de software senior con fuerte enfoque en producto. Ayudo a fundadores y equipos a diseñar, construir y lanzar <accent>aplicaciones web</accent>, <accent>apps móviles</accent> y <accent>sistemas internos</accent> confiables, usables y listos para producción.",
+  "tagline": "Creo que la tecnología debe servir a la humanidad — no abrumarla.",
+  "cta": {
+    "work": "Trabajemos juntos",
+    "cv": "Descargar mi CV"
+  }
+},
+
   "about": {
     "title": "Sobre Mí",
     "description1": "Hola, soy Joskua, un desarrollador freelance con sede en Ciudad de México. Creo que la tecnología debe hacer la vida más fácil, más inteligente y más humana.",
