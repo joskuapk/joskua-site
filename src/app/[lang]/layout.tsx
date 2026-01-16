@@ -75,7 +75,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body
-        className={`${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable} antialiased bg-deep-blue text-lemon-green`}
+        className={`${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable} antialiased`}
       >
         <IntlProviderWrapper messages={messages} lang={lang}>
           <Header />
