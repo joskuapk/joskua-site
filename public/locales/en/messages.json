@@ -4,13 +4,15 @@
     "description": "Developer based in Mexico City. I build clean, scalable web apps, automations, and digital tools with purpose."
   },
   "hero": {
-    "title": "Technology should serve humanity.",
-    "description": "I’m Joskua — a full-stack developer who builds clean, scalable web apps, automations, and digital tools with purpose.",
-    "cta": {
-      "work": "Let’s Work Together",
-      "cv": "Download My CV"
-    }
-  },
+  "title": "I build modern software that works in the real world.",
+  "description": "I’m <name>Joskua Olivares</name> — a senior software engineer with strong <accent>product sense</accent>. I help founders and teams design, build, and ship <accent>web apps</accent>, <accent>mobile apps</accent>, and internal systems that are <accent>reliable</accent>, <accent>usable</accent>, and <accent>ready for production</accent>.",
+  "tagline": "I believe technology should serve humanity — not overwhelm it.",
+  "cta": {
+    "work": "Let’s Work Together",
+    "cv": "Download My CV"
+  }
+},
+
   "about": {
     "title": "About Me",
     "description1": "Hi, I’m Joskua — a freelance developer based in Mexico City. I believe that technology should make life easier, smarter, and more human.",
