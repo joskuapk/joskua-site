@@ -13,7 +13,32 @@
       "cv": "Descargar mi CV"
     }
   },
-
+  "whyWorkWithMe": {
+    "title": "Por qué los equipos trabajan conmigo",
+    "points": [
+      {
+        "key": "translate",
+        "title": "Convierto necesidades de negocio en software funcional",
+        "description": "Me enfoco en <accent>resultados</accent>, no en buzzwords—transformo problemas reales en soluciones <accent>prácticas</accent> y <accent>escalables</accent>."
+      },
+      {
+        "key": "communicate",
+        "title": "Me comunico con claridad",
+        "description": "Sin jerga técnica innecesaria. Explicaciones claras para personas <accent>técnicas</accent> y <accent>no técnicas</accent>."
+      },
+      {
+        "key": "ownership",
+        "title": "Me hago cargo y entrego",
+        "description": "Trato el producto como si fuera mío—con responsabilidad desde la <accent>idea</accent> hasta <accent>producción</accent>."
+      },
+      {
+        "key": "experience",
+        "title": "Experiencia en startups y sistemas empresariales",
+        "description": "He trabajado en <accent>startups ágiles</accent> y en <accent>entornos empresariales complejos</accent>, con restricciones reales."
+      }
+    ],
+    "footer": "Más de 5 años entregando software en producción en <accent>SaaS</accent>, <accent>FinTech</accent>, <accent>logística</accent> y <accent>plataformas de marketing</accent>."
+  },
   "about": {
     "title": "Sobre Mí",
     "description1": "Hola, soy Joskua, un desarrollador freelance con sede en Ciudad de México. Creo que la tecnología debe hacer la vida más fácil, más inteligente y más humana.",

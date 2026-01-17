@@ -53,7 +53,7 @@ export default function GlassCard({
       </svg>
 
       <div
-        className={`glass-card ${className}`}
+        className={`glass-card flex flex-col ${className ?? ""}`}
         style={
           {
             ["--glass-radius" as any]: `${radius}px`,

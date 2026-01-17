@@ -13,6 +13,32 @@
       "cv": "Download My CV"
     }
   },
+  "whyWorkWithMe": {
+    "title": "Why Teams Work With Me",
+    "points": [
+      {
+        "key": "translate",
+        "title": "I translate business needs into working software",
+        "description": "I focus on <accent>outcomes</accent>, not buzzwords—turning real business problems into <accent>practical</accent>, <accent>scalable</accent> solutions."
+      },
+      {
+        "key": "communicate",
+        "title": "I communicate clearly",
+        "description": "No unnecessary tech jargon. Clear explanations for both <accent>technical</accent> and <accent>non-technical</accent> stakeholders."
+      },
+      {
+        "key": "ownership",
+        "title": "I take ownership and deliver",
+        "description": "I treat products like they’re my own—taking responsibility from <accent>idea</accent> to <accent>production</accent>."
+      },
+      {
+        "key": "experience",
+        "title": "Experience across startups and enterprise systems",
+        "description": "I’ve worked in <accent>fast-moving startups</accent> and <accent>complex enterprise environments</accent> with real constraints."
+      }
+    ],
+    "footer": "5+ years shipping production software across <accent>SaaS</accent>, <accent>FinTech</accent>, <accent>logistics</accent>, and <accent>marketing platforms</accent>."
+  },
 
   "about": {
     "title": "About Me",
