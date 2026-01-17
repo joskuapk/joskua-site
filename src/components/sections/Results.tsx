@@ -19,7 +19,7 @@ export default function Results() {
         {results.map((item, index) => (
           <div
             key={index}
-            className="p-6 border border-lemon-green rounded-lg hover:bg-lemon-green hover:text-deep-blue transition"
+            className="p-6 border border-lemon-green rounded-lg hover:bg-primary-500 hover:text-background-500 transition"
           >
             <p className="text-2xl font-bold mb-2">{item.value}</p>
             <p className="text-light-blue">{item.description}</p>

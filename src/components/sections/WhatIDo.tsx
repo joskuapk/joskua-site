@@ -24,7 +24,7 @@ export default function WhatIDo() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="p-6 border border-lemon-green rounded-lg hover:bg-lemon-green hover:text-deep-blue transition"
+            className="p-6 border border-lemon-green rounded-lg hover:bg-primary-500 hover:text-background-500 transition"
           >
             {service}
           </div>

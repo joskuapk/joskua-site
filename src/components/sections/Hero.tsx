@@ -3,16 +3,20 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import GlassCard from "../common/GlassCard";
 import GlitchText from "../common/GlitchText";
+import ScrambleText from "../common/ScrambleText";
 
 export default function Hero() {
   const t = useTranslations();
 
   return (
     <section className="hero-section w-full min-h-[calc(100dvh-5rem)] flex flex-col items-center justify-center p-20">
-      <GlassCard
-        className="flex flex-col items-center justify-center p-5 sm:p-8 md:p-12 lg:p-15
-"
-      >
+      <GlassCard className="flex flex-col items-center justify-center p-5 sm:p-8 md:p-12 lg:p-15">
+        <h1>
+          <ScrambleText
+            className="hero-title"
+            text="Hello world!"
+          ></ScrambleText>
+        </h1>
         <h1
           aria-label="Hero title"
           className="hero-title py-8 max-w-250 text-center"
