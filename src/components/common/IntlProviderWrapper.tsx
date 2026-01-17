@@ -1,19 +1,18 @@
 "use client";
 
 import { NextIntlClientProvider } from "next-intl";
-import { ReactNode } from "react";
 
 export default function IntlProviderWrapper({
   children,
   messages,
   lang,
 }: {
-  children: ReactNode;
-  messages: Record<string, string>;
+  children: React.ReactNode;
+  messages: Record<string, any>;
   lang: string;
 }) {
   return (
-    <NextIntlClientProvider messages={messages} locale={lang}>
+    <NextIntlClientProvider locale={lang} messages={messages} timeZone="UTC">
       {children}
     </NextIntlClientProvider>
   );
