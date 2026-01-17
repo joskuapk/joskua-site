@@ -5,22 +5,22 @@
    -------------------------- */
 :root {
   /* Text */
-  --text-500: #A9C7B0;
-  --text-400: #E6F2E7;
+  --text-500: #a9c7b0;
+  --text-400: #e6f2e7;
 
   /* Primary (green) */
-  --primary-500: #67B56A;
-  --primary-400: #7EE081;
+  --primary-500: #67b56a;
+  --primary-400: #7ee081;
 
   /* Background (deep blue) */
-  --background-500: #141B41;
-  --background-400: #3E52BC;
+  --background-500: #141b41;
+  --background-400: #3e52bc;
 
   /* Accent 1 (cyan) */
-  --accent1-500: #52E3F6;
+  --accent1-500: #52e3f6;
 
   /* Accent 2 (red) */
-  --accent2-500: #E63946;
+  --accent2-500: #e63946;
 }
 /* Tailwind v4 token mapping */
 @theme {
@@ -52,37 +52,67 @@ body {
 
 /* Body default */
 p {
-  font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family:
+    var(--font-body),
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 20px;
   color: var(--text-500);
 }
 
 /* Headlines */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display), system-ui, sans-serif;
   letter-spacing: 0.02em;
   color: var(--primary-500);
 }
 
-h1 { font-size: 96px; line-height: 1.05; }
-h2 { font-size: 64px; line-height: 1.1; }
-h3 { font-size: 48px; line-height: 1.15; }
-h4 { font-size: 40px; line-height: 1.2; }
-h5 { font-size: 36px; line-height: 1.2; }
-h6 { font-size: 32px; line-height: 1.25; }
+h1 {
+  font-size: 96px;
+  line-height: 1.05;
+}
+h2 {
+  font-size: 64px;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 48px;
+  line-height: 1.15;
+}
+h4 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+h5 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+h6 {
+  font-size: 32px;
+  line-height: 1.25;
+}
 
 /* Nav / UI accents */
 .nav-button,
 code,
 kbd {
-  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 /* =========================
    HERO TYPOGRAPHY
 ========================= */
-
-
 
 .hero-section {
   position: relative;
@@ -97,7 +127,7 @@ kbd {
       rgba(188, 231, 253, 0.12),
       transparent 45%
     ),
-    #141B41;
+    #141b41;
 
   animation: heroGradient 18s ease-in-out infinite;
 }
@@ -139,10 +169,6 @@ kbd {
   overflow-wrap: normal;
 }
 
-.hero-title span {
-  display: block;
-}
-
 .hero-description .name {
   color: var(--primary-500);
 }
@@ -151,10 +177,11 @@ kbd {
   color: var(--primary-500);
 }
 
-
 .hero-action-btn {
   color: var(--text-400);
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
 }
 
 .hero-action-btn .nav-button {
@@ -200,8 +227,7 @@ kbd {
   transform: scale(0.98);
 }
 
-
-header{
+header {
   background-color: var(--background-500);
 }
 
@@ -212,21 +238,15 @@ header{
   transition: opacity 0.26s ease-out;
 
   /* Base shadow (depth) */
-  filter:
-    drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45))
-    drop-shadow(0 0 24px color-mix(in srgb, var(--primary-500) 35%, transparent));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45))
+    drop-shadow(
+      0 0 24px color-mix(in srgb, var(--primary-500) 35%, transparent)
+    );
 
-  backdrop-filter:
-    brightness(1.1)
-    blur(3px)
-    var(--glass-filter);
+  backdrop-filter: brightness(1.1) blur(3px) var(--glass-filter);
 
-  -webkit-backdrop-filter:
-    brightness(1.1)
-    blur(3px)
-    var(--glass-filter);
+  -webkit-backdrop-filter: brightness(1.1) blur(3px) var(--glass-filter);
 }
-
 
 .glass-card::before {
   content: "";
@@ -258,17 +278,88 @@ header{
   border-radius: inherit;
   pointer-events: none;
 
-  background:
-    radial-gradient(
-      120% 90% at 10% 10%,
-      color-mix(in srgb, var(--primary-500) 35%, transparent),
-      transparent 60%
-    );
+  background: radial-gradient(
+    120% 90% at 10% 10%,
+    color-mix(in srgb, var(--primary-500) 35%, transparent),
+    transparent 60%
+  );
 
   opacity: 0.6;
   mix-blend-mode: screen;
 }
 
+.glitch {
+  position: relative;
+  display: inline-block;
+  animation: glitch 1s linear infinite;
+}
 
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
 
+/* TOP slice */
+.glitch::before {
+  color: var(--primary-500); /* <-- key */
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%); /* bigger top slice */
+  animation: glitchTop 1s linear infinite;
+}
 
+/* BOTTOM slice */
+.glitch::after {
+  color: var(--primary-500); /* <-- key */
+  clip-path: polygon(
+    0 45%,
+    100% 45%,
+    100% 100%,
+    0 100%
+  ); /* bigger bottom slice */
+  animation: glitchBottom 1.5s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(3px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-3px, 2px);
+  }
+  62% {
+    transform: translate(12px, -1px) skew(-10deg);
+  }
+}
+
+@keyframes glitchBottom {
+  2%,
+  64% {
+    transform: translate(-3px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(3px, 0);
+  }
+  62% {
+    transform: translate(-16px, 4px) skew(12deg);
+  }
+}

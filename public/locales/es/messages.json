@@ -4,15 +4,15 @@
     "description": "Desarrollador con sede en Ciudad de México. Creo aplicaciones web limpias y escalables, automatizaciones y herramientas digitales con propósito."
   },
   "hero": {
-  "titleLine1": "Construyo software moderno",
-  "titleLine2": "que funciona en el mundo real.",
-  "description": "Soy <name>Joskua Olivares</name> — un ingeniero de software senior con fuerte enfoque en producto. Ayudo a fundadores y equipos a diseñar, construir y lanzar <accent>aplicaciones web</accent>, <accent>apps móviles</accent> y <accent>sistemas internos</accent> confiables, usables y listos para producción.",
-  "tagline": "Creo que la tecnología debe servir a la humanidad.",
-  "cta": {
-    "work": "Trabajemos juntos",
-    "cv": "Descargar mi CV"
-  }
-},
+    "titleLine1": "Construyo software moderno ",
+    "titleLine2": "que funciona en el mundo real.",
+    "description": "Soy <name>Joskua Olivares</name> — un ingeniero de software senior con fuerte enfoque en producto. Ayudo a fundadores y equipos a diseñar, construir y lanzar <accent>aplicaciones web</accent>, <accent>apps móviles</accent> y <accent>sistemas internos</accent> confiables, usables y listos para producción.",
+    "tagline": "Creo que la tecnología debe servir a la humanidad.",
+    "cta": {
+      "work": "Trabajemos juntos",
+      "cv": "Descargar mi CV"
+    }
+  },
 
   "about": {
     "title": "Sobre Mí",

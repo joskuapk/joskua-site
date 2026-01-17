@@ -1,0 +1,18 @@
+"use client";
+
+type GlitchTextProps = {
+  text: string;
+  className?: string;
+};
+
+export default function GlitchText({ text, className }: GlitchTextProps) {
+  return (
+    <span
+      className={`glitch relative inline-block ${className ?? ""}`}
+      aria-label={text}
+      data-text={text}
+    >
+      {text}
+    </span>
+  );
+}

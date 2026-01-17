@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import GlassCard from "../common/GlassCard";
+import GlitchText from "../common/GlitchText";
 
 export default function Hero() {
   const t = useTranslations();
@@ -16,9 +17,21 @@ export default function Hero() {
           aria-label="Hero title"
           className="hero-title py-8 max-w-250 text-center"
         >
-          <span>{t("hero.titleLine1")}</span>
-          <span>{t("hero.titleLine2")}</span>
+          <span>
+            {t.rich("hero.titleLine1", {
+              glitch: (chunks) => <GlitchText text={chunks as string} />,
+            })}
+          </span>
+
+          <span>
+            {t.rich("hero.titleLine2", {
+              glitch: (chunks) => (
+                <GlitchText text={chunks as string} className="inline-block" />
+              ),
+            })}
+          </span>
         </h1>
+
         <p aria-label="Hero description" className="hero-description max-w-250">
           {t.rich("hero.description", {
             name: (chunks) => <span className="name">{chunks}</span>,
