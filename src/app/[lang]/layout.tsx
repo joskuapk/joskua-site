@@ -27,7 +27,6 @@ const fontMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-
 export const metadata: Metadata = {
   title: "Joskua | Developer Portfolio",
   description:
@@ -79,7 +78,7 @@ export default async function RootLayout({
       >
         <IntlProviderWrapper messages={messages} lang={lang}>
           <Header />
-          <main className="min-h-screen w-full flex flex-col items-center justify-start">
+          <main className="w-full flex flex-col items-center justify-start pt-20">
             {children}
           </main>
           <Footer />

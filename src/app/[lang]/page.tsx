@@ -11,7 +11,6 @@ import JLogoCanvas from "@/components/visuals/JLogoCanvas";
 export default function Home() {
   return (
     <div className="min-h-screen w-full">
-      <div className="h-20" /> {/* Spacer for fixed header */}
       <Hero />
       <JLogoCanvas />
       <MotionSection>
