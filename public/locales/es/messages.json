@@ -14,7 +14,7 @@
     }
   },
   "whyWorkWithMe": {
-    "title": "Por qué los equipos trabajan conmigo",
+    "title": "¿Por qué los equipos trabajan conmigo?",
     "points": [
       {
         "key": "translate",
@@ -39,6 +39,114 @@
     ],
     "footer": "Más de 5 años entregando software en producción en <accent>SaaS</accent>, <accent>FinTech</accent>, <accent>logística</accent> y <accent>plataformas de marketing</accent>."
   },
+  "whatICanBuild": {
+    "eyebrow": "Capacidades",
+    "title": "¿Qué puedo ayudarte a construir?",
+    "intro": "Desde <accent>aplicaciones móviles</accent> y <accent>aplicaciones web</accent> hasta <accent>sistemas backend</accent> y <accent>estrategia de producto</accent>. Te ayudo a convertir ideas en <accent>software listo para producción</accent>.",
+    "items": [
+      {
+        "key": "mobile",
+        "title": "Apps móviles (Flutter)",
+        "description": "Aplicaciones móviles listas para producción con <accent>autenticación</accent>, <accent>integraciones con APIs</accent>, <accent>flujos offline</accent>, <accent>optimización de rendimiento</accent> y <accent>publicación en tiendas de apps</accent>."
+      },
+      {
+        "key": "web",
+        "title": "Aplicaciones web",
+        "description": "Aplicaciones orientadas a clientes, <accent>dashboards administrativos</accent>, <accent>herramientas internas</accent> y <accent>portales</accent> construidos con stacks web modernos y escalables."
+      },
+      {
+        "key": "backend",
+        "title": "Sistemas backend y APIs",
+        "description": "Diseño e implementación de <accent>APIs</accent>, <accent>integraciones con terceros</accent> y <accent>servicios backend confiables</accent>."
+      },
+      {
+        "key": "product",
+        "title": "Desarrollo enfocado en producto",
+        "description": "Si tu idea aún no está del todo clara, te ayudo a convertirla en un <accent>roadmap definido</accent> y a entregar algo <accent>real</accent>."
+      }
+    ]
+  },
+  "featuredWork": {
+    "title": "Trabajo destacado",
+    "subtitle": "Algunos proyectos donde lideré la entrega de extremo a extremo, coordiné equipos y llevé sistemas a producción.",
+    "projects": [
+      {
+        "key": "billboardPlanet",
+        "title": "Billboard Planet — app móvil en Flutter",
+        "subtitle": "Senior Engineer · Responsabilidad de extremo a extremo",
+        "summary": "Reconstruí una app heredada solo para Android en una aplicación moderna multiplataforma en Flutter, utilizada por equipos de campo en la industria de publicidad exterior.",
+        "bulletsTitle": "Qué hice / Mi rol / Impacto",
+        "bullets": [
+          "Ayuda a los instaladores a gestionar órdenes de trabajo (instalar, retirar, cambiar espectaculares).",
+          "Permite subir evidencias de finalización del trabajo desde campo.",
+          "Diseñé, desarrollé, gestioné y desplegué la aplicación de manera independiente.",
+          "Utilizada en 4 países · Adoptada por 6 empresas clientes."
+        ],
+        "ctaLabel": "Más detalles",
+        "href": "https://play.google.com/store/apps/details?id=com.BillboardPlanet.QGo",
+        "highlight": true
+      },
+      {
+        "key": "nexusSaaS",
+        "title": "Nexus — SaaS de marketing y lealtad",
+        "subtitle": "Tech Lead · Ingeniería de producto y sistemas",
+        "summary": "Lideré la ejecución técnica y de producto de una plataforma SaaS de marketing y lealtad utilizada por múltiples marcas.",
+        "bulletsTitle": "Responsabilidades",
+        "bullets": [
+          "Definición de arquitectura de sistemas e integraciones.",
+          "Traducción de requerimientos de negocio en roadmaps técnicos.",
+          "Liderazgo de planeación de sprints y toma de decisiones técnicas.",
+          "Responsabilidad sobre la estabilidad y entrega en producción."
+        ],
+        "ctaLabel": "Más detalles",
+        "href": "https://online.nexustargeting.com/"
+      },
+      {
+        "key": "factronica",
+        "title": "Factrónica — Rediseño y reconstrucción del sitio web",
+        "subtitle": "Entrega de producto · Web",
+        "summary": "Rediseñé y reconstruí un sitio HTML obsoleto y no responsivo, transformándolo en una experiencia moderna, mobile-first, con mejoras claras en usabilidad y rendimiento.",
+        "bulletsTitle": "Trabajo realizado",
+        "bullets": [
+          "Rediseño completo e implementación.",
+          "Coordinación con diseñadora gráfica.",
+          "Mejoras en rendimiento y usabilidad.",
+          "Tecnología: Framer (elegido intencionalmente por velocidad y time-to-market)."
+        ],
+        "ctaLabel": "Más detalles",
+        "href": "https://www.factronicamx.com/"
+      },
+      {
+        "key": "onlinePortal",
+        "title": "Portal en línea de Nexus Targeting",
+        "subtitle": "Entrega rápida · Portal para negocio",
+        "summary": "Entregué un portal orientado a negocio bajo tiempos ajustados, priorizando la usabilidad y la velocidad de ejecución mediante decisiones pragmáticas de tooling.",
+        "bulletsTitle": "Aspectos destacados",
+        "bullets": [
+          "Tiempos ajustados con ciclos de iteración rápidos.",
+          "Enfoque en usabilidad para usuarios de negocio.",
+          "Selección pragmática de herramientas para acelerar la entrega."
+        ],
+        "ctaLabel": "Más detalles",
+        "href": "https://online.nexustargeting.com/"
+      },
+      {
+        "key": "k1Electric",
+        "title": "K1 Electrical Contractors Ltd",
+        "subtitle": "Entrega de extremo a extremo · Sitio web para pequeño negocio",
+        "summary": "Entregué un sitio web mantenible y responsivo, con énfasis en claridad, estructura y facilidad de actualización a largo plazo.",
+        "bulletsTitle": "Enfoque",
+        "bullets": [
+          "Arquitectura de información orientada a la claridad.",
+          "Responsividad móvil y accesibilidad.",
+          "Estructura mantenible para futuras actualizaciones."
+        ],
+        "ctaLabel": "Más detalles",
+        "href": "https://www.k1electricltd.com/"
+      }
+    ]
+  },
+
   "about": {
     "title": "Sobre Mí",
     "description1": "Hola, soy Joskua, un desarrollador freelance con sede en Ciudad de México. Creo que la tecnología debe hacer la vida más fácil, más inteligente y más humana.",

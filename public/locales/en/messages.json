@@ -39,6 +39,113 @@
     ],
     "footer": "5+ years shipping production software across <accent>SaaS</accent>, <accent>FinTech</accent>, <accent>logistics</accent>, and <accent>marketing platforms</accent>."
   },
+  "whatICanBuild": {
+    "eyebrow": "Capabilities",
+    "title": "What I can help you build",
+    "intro": "From <accent>mobile</accent> and <accent>web applications</accent> to <accent>backend systems</accent> and <accent>product strategy</accent>. I help turn ideas into <accent>production-ready software</accent>.",
+    "items": [
+      {
+        "key": "mobile",
+        "title": "Mobile apps (Flutter)",
+        "description": "Production-ready mobile apps with <accent>authentication</accent>, <accent>API integrations</accent>, <accent>offline workflows</accent>, <accent>performance optimization</accent>, and <accent>app store deployment</accent>."
+      },
+      {
+        "key": "web",
+        "title": "Web applications",
+        "description": "Customer-facing apps, <accent>admin dashboards</accent>, <accent>internal tools</accent>, and <accent>portals</accent> built with modern, scalable web stacks."
+      },
+      {
+        "key": "backend",
+        "title": "Backend systems & APIs",
+        "description": "Design and implementation of <accent>APIs</accent>, <accent>third-party integrations</accent>, and <accent>reliable backend services</accent>."
+      },
+      {
+        "key": "product",
+        "title": "Product-focused development",
+        "description": "If your idea is still fuzzy, I help shape it into a <accent>clear roadmap</accent> and ship something <accent>real</accent>."
+      }
+    ]
+  },
+  "featuredWork": {
+    "title": "Featured Work",
+    "subtitle": "A few projects where I owned delivery end-to-end, led teams, and shipped production systems.",
+    "projects": [
+      {
+        "key": "billboardPlanet",
+        "title": "Billboard Planet — Flutter mobile app",
+        "subtitle": "Senior Engineer · End-to-end ownership",
+        "summary": "Rebuilt a legacy Android-only app into a modern cross-platform Flutter application used by field teams in the outdoor advertising industry.",
+        "bulletsTitle": "What it does / My role / Impact",
+        "bullets": [
+          "Helps installers manage work orders (install, remove, switch billboards).",
+          "Uploads proof of job completion from the field.",
+          "Designed, built, managed, and deployed the app independently.",
+          "Used across 4 countries · Adopted by 6 client companies."
+        ],
+        "ctaLabel": "More details",
+        "href": "https://play.google.com/store/apps/details?id=com.BillboardPlanet.QGo",
+        "highlight": true
+      },
+      {
+        "key": "nexusSaaS",
+        "title": "Nexus — Marketing & Loyalty SaaS",
+        "subtitle": "Tech Lead · Product & Systems Engineering",
+        "summary": "Led technical and product execution for a marketing and loyalty SaaS platform used by multiple brands.",
+        "bulletsTitle": "Responsibilities",
+        "bullets": [
+          "Defined system architecture and integrations.",
+          "Translated business requirements into technical roadmaps.",
+          "Led sprint planning and technical decision-making.",
+          "Owned production reliability and delivery."
+        ],
+        "ctaLabel": "More details",
+        "href": "https://online.nexustargeting.com/"
+      },
+      {
+        "key": "factronica",
+        "title": "Factrónica — Website redesign & rebuild",
+        "subtitle": "Product delivery · Web",
+        "summary": "Redesigned and rebuilt an outdated non-responsive HTML site into a modern, mobile-first experience with improved usability and performance.",
+        "bulletsTitle": "Work included",
+        "bullets": [
+          "Full redesign and implementation.",
+          "Coordination with a graphic designer.",
+          "Performance and usability improvements.",
+          "Tech: Framer (chosen intentionally for speed and time-to-market)."
+        ],
+        "ctaLabel": "More details",
+        "href": "https://www.factronicamx.com/"
+      },
+      {
+        "key": "onlinePortal",
+        "title": "Online Nexus Targeting Portal",
+        "subtitle": "Rapid delivery · Business-facing portal",
+        "summary": "Delivered a business-facing portal under tight timelines, prioritizing usability and execution speed with pragmatic tooling choices.",
+        "bulletsTitle": "Highlights",
+        "bullets": [
+          "Tight timelines with rapid iteration cycles.",
+          "Focused on usability for business users.",
+          "Pragmatic tooling selection for delivery speed."
+        ],
+        "ctaLabel": "More details",
+        "href": "https://online.nexustargeting.com/"
+      },
+      {
+        "key": "k1Electric",
+        "title": "K1 Electrical Contractors Ltd",
+        "subtitle": "End-to-end delivery · Small business website",
+        "summary": "Delivered a maintainable, responsive website emphasizing clarity, structure, and long-term ease of updates.",
+        "bulletsTitle": "Focus",
+        "bullets": [
+          "Clarity-first information architecture.",
+          "Mobile responsiveness and accessibility.",
+          "Maintainable structure for future updates."
+        ],
+        "ctaLabel": "More details",
+        "href": "https://www.k1electricltd.com/"
+      }
+    ]
+  },
 
   "about": {
     "title": "About Me",

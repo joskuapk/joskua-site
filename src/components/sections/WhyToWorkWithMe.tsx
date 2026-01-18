@@ -47,7 +47,7 @@ export default function WhyWorkWithMe() {
             return (
               <li key={idx} className="h-full">
                 <GlassCard className="h-full flex flex-col items-center justify-center text-center p-10">
-                  <Icon className="h-20 w-20 text-primary-400 mb-6" />
+                  <Icon className="h-20 w-20 text-accent1-500 mb-6" />
 
                   <div>
                     <h4 className="mb-2">{point.title}</h4>
