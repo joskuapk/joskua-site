@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@import "./sections.css";
+@import "./components.css";
+
+/* --------------------------
+   Design Tokens (source of truth)
+   -------------------------- */
+:root {
+  /* Text */
+  --text-500: #a9c7b0;
+  --text-400: #e6f2e7;
+
+  /* Primary (green) */
+  --primary-500: #67b56a;
+  --primary-400: #7ee081;
+
+  /* Background (deep blue) */
+  --background-500: #141b41;
+  --background-400: #3e52bc;
+
+  /* Accent 1 (cyan) */
+  --accent1-500: #52e3f6;
+
+  /* Accent 2 (red) */
+  --accent2-500: #e63946;
+}
+/* Tailwind v4 token mapping */
+@theme {
+  /* Text */
+  --color-text-500: var(--text-500);
+  --color-text-400: var(--text-400);
+
+  /* Primary */
+  --color-primary-500: var(--primary-500);
+  --color-primary-400: var(--primary-400);
+
+  /* Background */
+  --color-background-500: var(--background-500);
+  --color-background-400: var(--background-400);
+
+  /* Accent 1 */
+  --color-accent1-500: var(--accent1-500);
+
+  /* Accent 2 */
+  --color-accent2-500: var(--accent2-500);
+}
+body {
+  background-color: var(--background-500);
+  color: var(--text-500);
+}
+/* --------------------------
+   Typography Styles
+   -------------------------- */
+
+/* Body default */
+p {
+  font-family:
+    var(--font-body),
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  color: var(--text-500);
+}
+
+/* Headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--primary-500);
+}
+
+h1 {
+  font-size: clamp(3.25rem, 8vw, 4rem);
+} /* 52px → 64px */
+h2 {
+  font-size: clamp(2.5rem, 6vw, 3.25rem);
+} /* 40px → 52px */
+h3 {
+  font-size: clamp(2rem, 4.8vw, 2.5rem);
+} /* 32px → 40px */
+h4 {
+  font-size: clamp(1.5rem, 3.8vw, 2rem);
+} /* 24px → 32px */
+p {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+} /* 20px → 32px */
+
+/* Nav / UI accents */
+.nav-button,
+code,
+kbd {
+  font-family:
+    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}

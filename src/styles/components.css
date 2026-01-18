@@ -1,0 +1,140 @@
+header {
+  background-color: var(--background-500);
+}
+
+.glass-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  transition: opacity 0.26s ease-out;
+
+  /* Base shadow (depth) */
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45))
+    drop-shadow(
+      0 0 24px color-mix(in srgb, var(--primary-500) 35%, transparent)
+    );
+
+  backdrop-filter: brightness(1.1) blur(3px) var(--glass-filter);
+
+  -webkit-backdrop-filter: brightness(1.1) blur(3px) var(--glass-filter);
+}
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  /* Glass tint */
+  background: rgba(255, 255, 255, 0.06);
+
+  /* Neon edge glow */
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--primary-500) 45%, transparent),
+    inset 0 0 18px color-mix(in srgb, var(--primary-500) 30%, transparent),
+    inset 0 0 40px color-mix(in srgb, var(--primary-500) 15%, transparent),
+    inset 6px 6px 0 -6px rgba(255, 255, 255, 0.5);
+
+  /* Subtle neon bloom */
+  filter: drop-shadow(
+    0 0 18px color-mix(in srgb, var(--primary-500) 40%, transparent)
+  );
+}
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: radial-gradient(
+    120% 90% at 10% 10%,
+    color-mix(in srgb, var(--primary-500) 35%, transparent),
+    transparent 60%
+  );
+
+  opacity: 0.6;
+  mix-blend-mode: screen;
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  animation: glitch 1s linear infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* TOP slice */
+.glitch::before {
+  color: var(--primary-500); /* <-- key */
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%); /* bigger top slice */
+  animation: glitchTop 1s linear infinite;
+}
+
+/* BOTTOM slice */
+.glitch::after {
+  color: var(--primary-500); /* <-- key */
+  clip-path: polygon(
+    0 45%,
+    100% 45%,
+    100% 100%,
+    0 100%
+  ); /* bigger bottom slice */
+  animation: glitchBottom 1.5s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(3px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-3px, 2px);
+  }
+  62% {
+    transform: translate(12px, -1px) skew(-10deg);
+  }
+}
+
+@keyframes glitchBottom {
+  2%,
+  64% {
+    transform: translate(-3px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(3px, 0);
+  }
+  62% {
+    transform: translate(-16px, 4px) skew(12deg);
+  }
+}
+
+.project-card .subtitle {
+  color: var(--accent1-500);
+}

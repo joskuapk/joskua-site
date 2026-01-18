@@ -1,0 +1,116 @@
+/* =========================
+   HERO TYPOGRAPHY
+========================= */
+
+.hero-section {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(103, 181, 106, 0.14),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(188, 231, 253, 0.12),
+      transparent 45%
+    ),
+    #141b41;
+
+  animation: heroGradient 18s ease-in-out infinite;
+}
+
+/* Perfect loop animation */
+@keyframes heroGradient {
+  0% {
+    background-position:
+      0% 0%,
+      100% 0%;
+  }
+
+  50% {
+    background-position:
+      10% 5%,
+      90% 10%;
+  }
+
+  100% {
+    background-position:
+      0% 0%,
+      100% 0%;
+  }
+}
+
+.hero-title {
+  font-family: var(--font-display), system-ui, sans-serif;
+
+  /* Responsive, prevents overflow */
+  font-size: clamp(1rem, 7vw, 3.5rem);
+
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+
+  text-align: center;
+
+  /* Prevent Silkscreen word splits */
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.hero-description .name {
+  color: var(--primary-500);
+}
+
+.hero-description .accent {
+  color: var(--primary-500);
+}
+
+.hero-action-btn {
+  color: var(--text-400);
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.hero-action-btn .nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+
+  background: transparent;
+  color: inherit;
+
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Primary CTA */
+.hero-action-btn .contact-btn {
+  background-color: var(--primary-500);
+  color: var(--text-on-primary, #0b0f1a);
+}
+
+/* ✨ Hover effect */
+.hero-action-btn:hover {
+  transform: scale(1.06);
+}
+
+.hero-action-btn:hover .nav-button {
+  background-color: var(--primary-400);
+  color: var(--text-on-primary, #0b0f1a);
+
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--primary-400) 45%, transparent),
+    0 0 28px color-mix(in srgb, var(--primary-400) 30%, transparent);
+}
+
+/* Optional: active (click) feedback */
+.hero-action-btn:active {
+  transform: scale(0.98);
+}
