@@ -49,7 +49,7 @@ export default function ProjectsShowcase() {
 
   return (
     <section aria-label="Featured Work" id="projects" className="py-20">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto px-4">
         <div className="mb-10">
           <h2 className="text-left">{t("title")}</h2>
 
@@ -57,9 +57,9 @@ export default function ProjectsShowcase() {
           <p className="mt-3 ">{t("subtitle")}</p>
         </div>
 
-        <ul className="grid gap-8 md:grid-cols-2 items-stretch [grid-auto-rows:1fr]">
+        <ul className="grid gap-8 md:grid-cols-2 items-stretch">
           {cards.map((c) => (
-            <li key={c.title} className="h-full">
+            <li key={c.title} className="min-w-0">
               <ProjectCard {...c} />
             </li>
           ))}
