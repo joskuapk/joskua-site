@@ -22,9 +22,7 @@ export default function Home() {
       <MotionSection>
         <WhatICanBuild />
       </MotionSection>
-      <MotionSection>
-        <FeaturedWork />
-      </MotionSection>
+      <FeaturedWork />
       <MotionSection>
         <About />
       </MotionSection>
