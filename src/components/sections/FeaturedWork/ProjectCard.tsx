@@ -29,8 +29,8 @@ export default function ProjectCard({
   return (
     <div className="project-card h-full rounded-2xl border border-white/10 bg-background-400/30 p-8 shadow-sm">
       {/* Header */}
-      <div className="flex items-start justify-between gap-6">
-        <div>
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+        <div className="min-w-0">
           <h3
             className={[
               "text-xl font-semibold",
@@ -43,7 +43,7 @@ export default function ProjectCard({
           <p className="subtitle mt-1">{subtitle}</p>
         </div>
 
-        <div className="rounded-lg border border-accent2-500 bg-ba p-2">
+        <div className="self-start rounded-lg border border-accent2-500 bg-ba p-2">
           <Icon className="h-10 w-10 text-accent1-500" />
         </div>
       </div>
