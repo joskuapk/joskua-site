@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Silkscreen, Inter, IBM_Plex_Mono } from "next/font/google";
-import "../globals.css";
+import "../../styles/globals.css";
 import Footer from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import IntlProviderWrapper from "@/components/common/IntlProviderWrapper";
