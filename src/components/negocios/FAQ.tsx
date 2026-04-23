@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
-const whatsappHref =
-  "https://wa.me/525545707659?text=Hola%20Joskua,%20vi%20tu%20sitio%20de%20negocios%20y%20me%20interesa%20un%20diagn%C3%B3stico.";
+import { getWhatsAppHref } from "@/config/contact";
 
 type FAQItem = {
   question: string;
@@ -14,6 +12,7 @@ type FAQItem = {
 export default function FAQ() {
   const t = useTranslations("Negocios.faq");
   const items = t.raw("items") as FAQItem[];
+  const whatsappHref = getWhatsAppHref();
 
   return (
     <section className="negocios-section negocios-final">
