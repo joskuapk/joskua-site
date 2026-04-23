@@ -223,6 +223,120 @@
       "submit": "Enviar Mensaje"
     }
   },
+  "Negocios": {
+    "meta": {
+      "title": "Consultoría Tecnológica para Negocios | Joskua Olivares",
+      "description": "Consultoría tecnológica, automatización para negocios, e-commerce y asistentes de IA para PyMEs mexicanas que quieren vender más y operar mejor."
+    },
+    "hero": {
+      "eyebrow": "Aliado tecnológico estratégico para PyMEs",
+      "headline": "Tecnología para que tu negocio venda más y tú trabajes menos.",
+      "subheadline": "Digitalizo tus ventas y automatizo tu atención al cliente con soluciones estratégicas diseñadas para crecer.",
+      "cta": "Agendar diagnóstico por WhatsApp",
+      "floatingCta": "Abrir WhatsApp para agendar consultoría estratégica",
+      "responseTime": "Respuesta directa por WhatsApp",
+      "visualLabel": "Resumen de soluciones tecnológicas para negocios",
+      "logoAlt": "Joskua Olivares",
+      "signals": {
+        "automation": {
+          "value": "24/7",
+          "label": "Atención automatizada"
+        },
+        "commerce": {
+          "value": "7 días",
+          "label": "E-commerce funcional"
+        },
+        "support": {
+          "value": "Menos manual",
+          "label": "Procesos más claros"
+        }
+      }
+    },
+    "painPoints": {
+      "eyebrow": "Fricciones que cuestan ventas",
+      "title": "Tu negocio no necesita más trabajo manual: necesita sistemas.",
+      "intro": "Cuando la operación depende de mensajes sueltos, hojas de cálculo y respuestas tardías, el crecimiento se vuelve más caro de lo necesario.",
+      "items": [
+        {
+          "title": "Clientes que se enfrían por respuesta lenta",
+          "description": "Si contestas horas después, muchos prospectos ya compararon, dudaron o compraron con alguien más."
+        },
+        {
+          "title": "Presencia digital que no genera confianza",
+          "description": "Un sitio viejo, lento o poco claro hace que una empresa seria parezca improvisada desde el celular."
+        },
+        {
+          "title": "Procesos atrapados en papel y capturas manuales",
+          "description": "Cada tarea repetida a mano aumenta errores, retrabajo y dependencia de personas clave."
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Pilares de servicio",
+      "title": "Soluciones prácticas para vender, atender y operar mejor.",
+      "intro": "La estrategia define qué construir primero; la ingeniería se encarga de que funcione en el mundo real.",
+      "items": [
+        {
+          "title": "Venta Digital",
+          "description": "E-commerce, sitios profesionales y experiencias web rápidas que convierten confianza en oportunidades comerciales."
+        },
+        {
+          "title": "Inteligencia en Atención",
+          "description": "Asistentes de IA para WhatsApp que responden preguntas frecuentes, califican prospectos y mantienen activa la conversación."
+        },
+        {
+          "title": "Eficiencia Operativa",
+          "description": "Automatización de procesos, integraciones y software administrativo a la medida para reducir trabajo repetitivo."
+        }
+      ]
+    },
+    "portfolio": {
+      "eyebrow": "Casos estratégicos",
+      "title": "Resultados construidos con velocidad y criterio técnico.",
+      "intro": "Proyectos donde la prioridad fue resolver un problema comercial concreto, no solo entregar una pantalla bonita.",
+      "items": [
+        {
+          "title": "Factrónica — Modernización Digital",
+          "description": "Transformación de un sitio obsoleto en una experiencia profesional mobile-first, diseñada para comunicar confianza, autoridad y claridad desde el primer contacto.",
+          "metric": "Mobile-first",
+          "emphasis": "Confianza y autoridad"
+        },
+        {
+          "title": "Consumible Médico — E-commerce en 7 días",
+          "description": "Tienda funcional lista en una semana con pagos, facturación y envíos, priorizando salida rápida al mercado sin sacrificar la operación transaccional.",
+          "metric": "7 días",
+          "emphasis": "Pagos, facturación y envíos"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Sobre Joskua",
+      "title": "De liderazgo tecnológico internacional a aliado estratégico para negocios mexicanos.",
+      "description": "Después de liderar y construir tecnología para equipos en distintos países, enfoco esa experiencia en ayudar a PyMEs mexicanas a escalar con ingeniería práctica: sistemas claros, automatización útil y decisiones técnicas conectadas al negocio.",
+      "imageAlt": "Monograma de Joskua"
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Sin tecnicismos innecesarios.",
+      "items": [
+        {
+          "question": "¿Cuánto cuesta digitalizar mi negocio?",
+          "answer": "Depende del alcance. Primero diagnosticamos qué problema conviene resolver y después definimos una propuesta por etapas para invertir donde haya mayor retorno."
+        },
+        {
+          "question": "¿Cuánto tiempo toma ver resultados?",
+          "answer": "Hay soluciones que pueden salir en días, como una landing o e-commerce base, y otras que requieren semanas por integraciones o automatizaciones más profundas."
+        },
+        {
+          "question": "No soy técnico, ¿voy a poder usarlo?",
+          "answer": "Sí. La solución debe adaptarse a tu operación, no al revés. La entrega incluye claridad de uso, acompañamiento y decisiones pensadas para personas reales."
+        }
+      ],
+      "finalTitle": "Convirtamos tu operación en una ventaja competitiva.",
+      "finalIntro": "Agenda una conversación breve para detectar qué tecnología puede impactar ventas, atención u operación en tu negocio.",
+      "finalCta": "Agendar consultoría estratégica por WhatsApp"
+    }
+  },
   "footer": {
     "madeWith": "Hecho con 💻 por",
     "shortVersion": "¿Prefieres la versión corta?",

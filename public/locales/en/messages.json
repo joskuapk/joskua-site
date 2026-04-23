@@ -223,6 +223,120 @@
       "submit": "Send Message"
     }
   },
+  "Negocios": {
+    "meta": {
+      "title": "Technology Consulting for SMBs | Joskua Olivares",
+      "description": "Technology consulting, business automation, e-commerce, and AI assistants for SMBs that want to sell more and operate better."
+    },
+    "hero": {
+      "eyebrow": "Strategic technology ally for SMBs",
+      "headline": "Technology so your business sells more and you work less.",
+      "subheadline": "I digitize your sales and automate customer support with strategic solutions designed to grow.",
+      "cta": "Book a WhatsApp diagnosis",
+      "floatingCta": "Open WhatsApp to book a strategic consultation",
+      "responseTime": "Direct response on WhatsApp",
+      "visualLabel": "Business technology solutions summary",
+      "logoAlt": "Joskua Olivares",
+      "signals": {
+        "automation": {
+          "value": "24/7",
+          "label": "Automated support"
+        },
+        "commerce": {
+          "value": "7 days",
+          "label": "Functional e-commerce"
+        },
+        "support": {
+          "value": "Less manual",
+          "label": "Clearer processes"
+        }
+      }
+    },
+    "painPoints": {
+      "eyebrow": "Friction that costs sales",
+      "title": "Your business does not need more manual work. It needs systems.",
+      "intro": "When operations depend on scattered messages, spreadsheets, and late replies, growth becomes more expensive than it should be.",
+      "items": [
+        {
+          "title": "Leads go cold because replies are slow",
+          "description": "When you answer hours later, many prospects have already compared, hesitated, or bought from someone else."
+        },
+        {
+          "title": "A digital presence that does not build trust",
+          "description": "An old, slow, or unclear site makes a serious company feel improvised on mobile."
+        },
+        {
+          "title": "Processes stuck in paper and manual entry",
+          "description": "Every repeated manual task increases errors, rework, and dependency on key people."
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Service pillars",
+      "title": "Practical solutions to sell, support, and operate better.",
+      "intro": "Strategy defines what to build first; engineering makes sure it works in the real world.",
+      "items": [
+        {
+          "title": "Digital Sales",
+          "description": "E-commerce, professional websites, and fast web experiences that turn trust into business opportunities."
+        },
+        {
+          "title": "Support Intelligence",
+          "description": "AI assistants for WhatsApp that answer common questions, qualify leads, and keep the conversation moving."
+        },
+        {
+          "title": "Operational Efficiency",
+          "description": "Process automation, integrations, and custom administrative software to reduce repetitive work."
+        }
+      ]
+    },
+    "portfolio": {
+      "eyebrow": "Strategic case studies",
+      "title": "Results built with speed and technical judgment.",
+      "intro": "Projects where the priority was solving a concrete commercial problem, not just delivering a pretty screen.",
+      "items": [
+        {
+          "title": "Factrónica — Digital Modernization",
+          "description": "Transformation from an obsolete site into a professional mobile-first experience designed to communicate trust, authority, and clarity from the first contact.",
+          "metric": "Mobile-first",
+          "emphasis": "Trust and authority"
+        },
+        {
+          "title": "Consumible Médico — E-commerce in 7 Days",
+          "description": "A functional store ready in one week with payments, billing, and shipping, prioritizing speed to market without losing transaction readiness.",
+          "metric": "7 days",
+          "emphasis": "Payments, billing, and shipping"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "About Joskua",
+      "title": "From international technology leadership to strategic ally for Mexican businesses.",
+      "description": "After leading and building technology for teams across countries, I now focus that experience on helping Mexican SMBs scale through practical engineering: clear systems, useful automation, and technical decisions connected to the business.",
+      "imageAlt": "Joskua monogram"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "No unnecessary technical jargon.",
+      "items": [
+        {
+          "question": "How much does it cost to digitize my business?",
+          "answer": "It depends on the scope. First we diagnose which problem is worth solving, then define a staged proposal so investment goes where it can create the most return."
+        },
+        {
+          "question": "How long does it take to see results?",
+          "answer": "Some solutions can launch in days, such as a landing page or base e-commerce store, while deeper integrations and automations can take weeks."
+        },
+        {
+          "question": "I am not technical. Will I be able to use it?",
+          "answer": "Yes. The solution should adapt to your operation, not the other way around. Delivery includes clarity, guidance, and decisions designed for real people."
+        }
+      ],
+      "finalTitle": "Let us turn your operation into a competitive advantage.",
+      "finalIntro": "Book a short conversation to identify what technology can improve sales, support, or operations in your business.",
+      "finalCta": "Book a strategic consultation on WhatsApp"
+    }
+  },
   "footer": {
     "madeWith": "Made with 💻 by",
     "shortVersion": "Want the short version?",
