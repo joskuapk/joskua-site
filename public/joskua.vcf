@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Jóskua Olivares Obregón
+N:Olivares Obregón;Jóskua;;;
+TITLE:Estratega de Automatización y Ventas
+TEL;TYPE=cell,voice;VALUE=uri:tel:+525545650464
+URL:https://www.joskua.space/es/negocios
+PHOTO;VALUE=URI:https://www.joskua.space/apple-touch-icon.png
+NOTE:Especialidades en AI y Automation.
+END:VCARD
