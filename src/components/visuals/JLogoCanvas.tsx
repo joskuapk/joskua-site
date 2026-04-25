@@ -8,7 +8,7 @@ import * as THREE from "three";
 
 export default function JLogoCanvas() {
   return (
-    <div className="mx-auto w-60 h-60 z-50 relative">
+    <div className="mx-auto w-60 h-60 relative">
       {/* Set up a 3D canvas with camera and lighting */}
       <Canvas camera={{ position: [0, 0, 30], fov: 45 }}>
         <ambientLight intensity={1.5} />

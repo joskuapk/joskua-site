@@ -48,7 +48,11 @@ export default function ProjectsShowcase() {
   }));
 
   return (
-    <section aria-label="Featured Work" id="projects" className="py-20">
+    <section
+      aria-label="Featured Work"
+      id="projects"
+      className="w-full max-w-4xl mx-auto px-4 py-12"
+    >
       <div className="mx-auto px-4">
         <div className="mb-10">
           <h2 className="text-left">{t("title")}</h2>
