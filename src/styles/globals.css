@@ -48,6 +48,13 @@ body {
   background-color: var(--background-500);
   color: var(--text-500);
 }
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent1-500);
+  outline-offset: 4px;
+}
 /* --------------------------
    Typography Styles
    -------------------------- */
@@ -129,27 +136,36 @@ kbd {
 .consulting-landing h2,
 .consulting-landing h3 {
   color: var(--text-400);
-  line-height: 1.04;
+  font-family:
+    var(--font-body),
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    sans-serif;
+  font-weight: 700;
+  line-height: 1.12;
+  text-wrap: balance;
 }
 
 .consulting-landing h1 {
-  max-width: 12ch;
-  font-size: clamp(2.65rem, 13vw, 5.6rem);
+  max-width: 15ch;
+  font-size: clamp(2.35rem, 8vw, 4.6rem);
 }
 
 .consulting-landing h2 {
-  max-width: 13ch;
-  font-size: clamp(2rem, 8vw, 4.2rem);
+  max-width: 19ch;
+  font-size: clamp(1.8rem, 5.8vw, 3.25rem);
 }
 
 .consulting-landing h3 {
-  font-size: clamp(1.2rem, 5vw, 1.65rem);
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  line-height: 1.3;
 }
 
 .consulting-landing p {
   color: var(--text-500);
-  font-size: clamp(1rem, 4vw, 1.18rem);
-  line-height: 1.7;
+  font-size: clamp(1rem, 2vw, 1.12rem);
+  line-height: 1.68;
 }
 
 .negocios-container {
@@ -159,7 +175,7 @@ kbd {
 
 .negocios-hero {
   position: relative;
-  min-height: calc(100dvh - 5rem);
+  min-height: min(54rem, calc(100dvh - 5rem));
   display: flex;
   align-items: center;
   padding-block: clamp(3rem, 9vw, 7rem);
@@ -196,9 +212,7 @@ kbd {
   padding: 0.45rem 0.7rem;
   background: color-mix(in srgb, var(--background-400) 24%, transparent);
   color: var(--accent1-500) !important;
-  font-family:
-    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: var(--font-display), system-ui, sans-serif;
   font-size: 0.72rem !important;
   line-height: 1.2 !important;
   text-transform: uppercase;
@@ -232,10 +246,8 @@ kbd {
   padding: 0.85rem 1rem;
   background: var(--primary-500);
   color: #09121a;
-  font-family:
-    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
-  font-size: 0.92rem;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 0.78rem;
   font-weight: 700;
   text-align: center;
   transition:
@@ -251,7 +263,7 @@ kbd {
 }
 
 .negocios-hero__visual,
-.negocios-about__mark {
+.negocios-about__visual {
   border: 1px solid color-mix(in srgb, var(--text-400) 16%, transparent);
   border-radius: 8px;
   background:
@@ -299,9 +311,7 @@ kbd {
 .negocios-signal-grid strong,
 .negocios-portfolio-card__metric {
   color: var(--primary-400);
-  font-family:
-    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: var(--font-display), system-ui, sans-serif;
   font-size: 1.35rem;
 }
 
@@ -315,14 +325,31 @@ kbd {
   padding-block: clamp(3.5rem, 10vw, 7rem);
 }
 
+.negocios-section--pain {
+  background: color-mix(in srgb, #071126 22%, transparent);
+}
+
+.negocios-section--services {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--background-400) 9%, transparent),
+      transparent
+    );
+}
+
 .negocios-section__header {
   display: grid;
   gap: 1rem;
   margin-bottom: clamp(1.5rem, 6vw, 3rem);
 }
 
+.negocios-section__header h2 {
+  margin: 0;
+}
+
 .negocios-section__header p:not(.negocios-eyebrow) {
-  max-width: 46rem;
+  max-width: 42rem;
 }
 
 .negocios-card-grid,
@@ -336,6 +363,11 @@ kbd {
   display: grid;
   gap: 1rem;
   padding: clamp(1rem, 5vw, 1.5rem);
+}
+
+.negocios-card p,
+.negocios-portfolio-card > p {
+  max-width: 38rem;
 }
 
 .negocios-card-grid--pain .negocios-card {
@@ -373,16 +405,27 @@ kbd {
     );
 }
 
-.negocios-about__mark {
-  min-height: 16rem;
-  display: grid;
-  place-items: center;
-  padding: 2rem;
+.negocios-about__visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 18rem;
 }
 
 .negocios-about__image {
-  width: min(55vw, 12rem);
+  width: 100%;
   height: auto;
+  display: block;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.negocios-about__copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.negocios-about__copy p:last-child {
+  max-width: 42rem;
 }
 
 .negocios-faq-list {
@@ -398,8 +441,10 @@ kbd {
 .negocios-faq-item summary {
   cursor: pointer;
   color: var(--text-400);
-  font-family: var(--font-display), system-ui, sans-serif;
-  font-size: 1.05rem;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: clamp(1.02rem, 2vw, 1.15rem);
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .negocios-faq-item p {
@@ -420,6 +465,10 @@ kbd {
 .negocios-final-cta h2,
 .negocios-final-cta p {
   width: 100%;
+}
+
+.negocios-final-cta h2 {
+  max-width: 22ch;
 }
 
 .negocios-whatsapp {
@@ -460,6 +509,41 @@ kbd {
   }
 
   .negocios-about__grid {
-    grid-template-columns: minmax(16rem, 0.6fr) minmax(0, 1fr);
+    grid-template-columns: minmax(22rem, 0.9fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .negocios-hero {
+    min-height: auto;
+  }
+
+  .negocios-hero__actions {
+    align-items: stretch;
+  }
+
+  .negocios-hero__actions .negocios-button {
+    width: 100%;
+  }
+
+  .negocios-whatsapp {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .negocios-button:hover,
+  .hero-action-btn:hover {
+    transform: none;
   }
 }

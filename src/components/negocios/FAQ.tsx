@@ -15,11 +15,14 @@ export default function FAQ() {
   const whatsappHref = getWhatsAppHref();
 
   return (
-    <section className="negocios-section negocios-final">
+    <section
+      className="negocios-section negocios-final"
+      aria-labelledby="negocios-faq-title"
+    >
       <div className="negocios-container">
         <div className="negocios-section__header">
           <p className="negocios-eyebrow">{t("eyebrow")}</p>
-          <h2>{t("title")}</h2>
+          <h2 id="negocios-faq-title">{t("title")}</h2>
         </div>
 
         <div className="negocios-faq-list">

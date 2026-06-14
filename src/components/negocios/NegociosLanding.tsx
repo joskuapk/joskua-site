@@ -25,11 +25,14 @@ export default function NegociosLanding() {
       <Features namespace="painPoints" variant="pain" />
       <Features namespace="services" />
 
-      <section className="negocios-section negocios-section--portfolio">
+      <section
+        className="negocios-section negocios-section--portfolio"
+        aria-labelledby="negocios-portfolio-title"
+      >
         <div className="negocios-container">
           <div className="negocios-section__header">
             <p className="negocios-eyebrow">{t("portfolio.eyebrow")}</p>
-            <h2>{t("portfolio.title")}</h2>
+            <h2 id="negocios-portfolio-title">{t("portfolio.title")}</h2>
             <p>{t("portfolio.intro")}</p>
           </div>
 
@@ -47,21 +50,25 @@ export default function NegociosLanding() {
         </div>
       </section>
 
-      <section className="negocios-section negocios-about">
+      <section
+        className="negocios-section negocios-about"
+        aria-labelledby="negocios-about-title"
+      >
         <div className="negocios-container negocios-about__grid">
-          <div className="negocios-about__mark">
+          <div className="negocios-about__visual">
             <Image
-              src="/JLetter.svg"
+              src="/technology-consulting-mexican-businesses.webp"
               alt={t("about.imageAlt")}
-              width={220}
-              height={220}
+              width={1440}
+              height={960}
+              sizes="(min-width: 900px) 42vw, calc(100vw - 2rem)"
               className="negocios-about__image"
             />
           </div>
 
-          <div>
+          <div className="negocios-about__copy">
             <p className="negocios-eyebrow">{t("about.eyebrow")}</p>
-            <h2>{t("about.title")}</h2>
+            <h2 id="negocios-about-title">{t("about.title")}</h2>
             <p>{t("about.description")}</p>
           </div>
         </div>

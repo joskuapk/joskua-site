@@ -20,11 +20,14 @@ export default function Features({
   const items = t.raw("items") as TextItem[];
 
   return (
-    <section className="negocios-section">
+    <section
+      className={`negocios-section negocios-section--${variant}`}
+      aria-labelledby={`negocios-${namespace}-title`}
+    >
       <div className="negocios-container">
         <div className="negocios-section__header">
           <p className="negocios-eyebrow">{t("eyebrow")}</p>
-          <h2>{t("title")}</h2>
+          <h2 id={`negocios-${namespace}-title`}>{t("title")}</h2>
           <p>{t("intro")}</p>
         </div>
 
