@@ -239,17 +239,18 @@
       "whatsappMessage": "Hi Joskua, I saw your business services page and would like to discuss an improvement opportunity.",
       "email": "joskua.olivares@gmail.com",
       "emailCta": "Send an email inquiry",
-      "emailExpectation": "For less time-sensitive inquiries, email works well. You can expect a reply within one week."
+      "emailExpectation": "Email works for non-urgent inquiries."
     },
     "hero": {
       "eyebrow": "Strategic technology ally for SMBs",
-      "headline": "Digital systems to help your business sell, serve, and operate better.",
-      "subheadline": "I help SMBs turn websites, WhatsApp, integrations, and automation into practical business tools.",
-      "diagnosisNote": "The initial WhatsApp diagnosis is a short conversation to identify the highest-value opportunity and define the next step.",
+      "headline": "Digital systems to sell, serve, and operate better.",
+      "subheadline": "Web, WhatsApp, and automation that support the business.",
+      "diagnosisNote": "A short conversation to find the best opportunity.",
       "cta": "Start a WhatsApp diagnosis",
       "floatingCta": "Open WhatsApp to start a diagnosis",
       "responseTime": "Same-day response on WhatsApp.",
       "visualLabel": "Business technology solutions summary",
+      "imageAlt": "Business owner managing sales, messages, and inventory from a tablet",
       "logoAlt": "Joskua Olivares",
       "signals": {
         "automation": {
@@ -268,114 +269,112 @@
     },
     "painPoints": {
       "eyebrow": "Friction that costs sales",
-      "title": "Your business does not need more manual work. It needs systems.",
-      "intro": "When operations depend on scattered messages, spreadsheets, and late replies, growth becomes more expensive than it should be.",
+      "title": "Less manual work. Better systems.",
+      "intro": "Daily friction slows sales and growth.",
       "items": [
         {
-          "title": "Leads go cold because replies are slow",
-          "description": "When you answer hours later, many prospects have already compared, hesitated, or bought from someone else."
+          "title": "Slow replies",
+          "description": "Prospects leave before they hear back."
         },
         {
-          "title": "A digital presence that does not build trust",
-          "description": "An old, slow, or unclear site makes a serious company feel improvised on mobile."
+          "title": "Low digital trust",
+          "description": "A slow or unclear site weakens your offer."
         },
         {
-          "title": "Processes stuck in paper and manual entry",
-          "description": "Every repeated manual task increases errors, rework, and dependency on key people."
+          "title": "Repetitive processes",
+          "description": "Manual entry creates errors and rework."
         }
       ]
     },
     "services": {
       "eyebrow": "Service areas",
-      "title": "Technology focused on concrete business outcomes.",
-      "intro": "Each project starts with a commercial or operational priority, then uses the right solution instead of a rigid package.",
+      "title": "Technology for concrete outcomes.",
+      "intro": "Priority first. Solution second.",
+      "imageAlt": "Business owners connecting digital sales, customer service, and automation",
       "items": [
         {
           "title": "Digital Sales",
-          "description": "Professional websites and e-commerce that clarify your offer, build trust, and make it easier to buy or get in touch."
+          "description": "Web and e-commerce built to sell clearly."
         },
         {
-          "title": "Intelligent Customer Service",
-          "description": "WhatsApp and customer-service automation that answers questions, guides prospects, and makes follow-up more consistent."
+          "title": "Smarter Service",
+          "description": "Faster, more consistent WhatsApp follow-up."
         },
         {
-          "title": "Operational Efficiency",
-          "description": "Integrations, internal tools, and process automation that reduce repeated data entry, errors, and manual work."
+          "title": "Efficient Operations",
+          "description": "Integrations that reduce errors and manual work."
         }
       ]
     },
     "midCta": {
       "eyebrow": "First step",
-      "title": "Let us identify where technology can create the most value.",
-      "description": "In a short WhatsApp conversation, we review your context, the main point of friction, and the opportunity worth prioritizing.",
+      "title": "Find the highest-value improvement.",
+      "description": "Let us review your main friction on WhatsApp.",
       "cta": "Talk on WhatsApp"
     },
     "portfolio": {
       "eyebrow": "Delivery evidence",
-      "title": "Delivered projects and verifiable client context.",
-      "intro": "Each case separates work delivered by Joskua from operating figures published by the client.",
+      "title": "Work delivered.",
+      "intro": "Two real, verifiable projects.",
       "items": [
         {
-          "title": "Factrónica — website redesign and rebuild",
+          "title": "Factrónica — web redesign",
           "metric": "Mobile-first",
           "emphasis": "Corporate website",
           "projectLabel": "Delivered by Joskua",
-          "projectResult": "Redesigned and rebuilt the corporate website, replacing an outdated, non-responsive HTML experience with a modern mobile-responsive site.",
-          "clientContextLabel": "Operating scale published by Factrónica",
+          "projectResult": "A modern, mobile-responsive corporate website.",
+          "clientContextLabel": "Published context",
           "clientContext": [
             "More than 400 companies served.",
-            "600 million CFDIs issued annually.",
-            "More than 15 years of experience.",
-            "40% operating-cost savings reported by Factrónica."
+            "600 million CFDIs issued annually."
           ],
           "href": "https://www.factronicamx.com/",
           "linkLabel": "Visit Factrónica's live website"
         },
         {
-          "title": "Consumible Médico — e-commerce delivery",
+          "title": "Consumible Médico — e-commerce",
           "metric": "7 days",
           "emphasis": "Delivery timeline",
           "projectLabel": "Delivery result",
-          "projectResult": "Joskua delivered the website and core e-commerce setup within 7 days. This timeline describes project execution, not subsequent company-wide business results.",
-          "clientContextLabel": "Capabilities visible on the site",
+          "projectResult": "Website and core e-commerce delivered in 7 days.",
+          "clientContextLabel": "Includes",
           "clientContext": [
-            "Catalog with medical-product categories and product pages.",
-            "Search, cart, customer account, and checkout flow.",
-            "WhatsApp contact and access to billing."
+            "Catalog, search, cart, and checkout.",
+            "WhatsApp contact and billing access."
           ],
           "href": "https://consumiblemedico.mx/",
           "linkLabel": "Visit Consumible Médico's live e-commerce site"
         }
       ],
-      "disclaimer": "Factrónica's figures describe the scale and results the company publishes about its own operation. They are client context and are not attributed to Joskua's website redesign. For Consumible Médico, the 7-day figure refers only to the project's delivery timeline."
+      "disclaimer": "Factrónica figures are client-published context. The 7-day figure is Consumible Médico's delivery timeline."
     },
     "process": {
       "eyebrow": "How delivery works",
-      "title": "A clear path from opportunity to adoption.",
-      "intro": "Scope and pace adjust to the project while priorities and decisions remain visible throughout.",
+      "title": "A clear process.",
+      "intro": "Visible priorities from start to launch.",
       "items": [
         {
           "title": "Diagnosis",
-          "description": "We understand the business, the problem, and the highest-value opportunity."
+          "description": "We find the main opportunity."
         },
         {
           "title": "Proposal and priorities",
-          "description": "We define scope, work order, estimated timing, and success criteria."
+          "description": "We define scope, timing, and success."
         },
         {
           "title": "Build and integration",
-          "description": "We develop, connect, and validate the solution against real operations."
+          "description": "We build and validate the solution."
         },
         {
           "title": "Launch and guidance",
-          "description": "We put the system into use, support adoption, and agree on any ongoing support."
+          "description": "We launch and support adoption."
         }
       ]
     },
     "about": {
       "eyebrow": "About Joskua",
-      "title": "Technology consulting from Mexico City for businesses in Mexico.",
-      "description": "I am Joskua Olivares. I apply software development and technology leadership experience to help SMBs with websites, e-commerce, integrations, and practical automation, with explicit scope and delivery criteria.",
+      "title": "Practical technology from Mexico City.",
+      "description": "I am Joskua Olivares. I build web, e-commerce, and integrations with clear scope and deliverables.",
       "imageAlt": "Technology consultant collaborating with Mexican small-business owners on digital solutions"
     },
     "faq": {
@@ -384,31 +383,31 @@
       "items": [
         {
           "question": "How much does it cost to digitize my business?",
-          "answer": "It depends on the scope. First we diagnose which problem is worth solving, then define a staged proposal so investment goes where it can create the most return."
+          "answer": "It depends on scope. First we prioritize the problem, then propose stages."
         },
         {
           "question": "How long does it take to see results?",
-          "answer": "Some solutions can launch in days, such as a landing page or base e-commerce store, while deeper integrations and automations can take weeks."
+          "answer": "A landing page can launch in days; deeper integrations take weeks."
         },
         {
           "question": "I am not technical. Will I be able to use it?",
-          "answer": "Yes. The solution should adapt to your operation, not the other way around. Delivery includes clarity, guidance, and decisions designed for real people."
+          "answer": "Yes. The solution adapts to your operation and includes guidance."
         },
         {
           "question": "Will my business own the delivered system?",
-          "answer": "Ownership and access are made explicit in the proposal. As a working principle, the agreed deliverables and project accounts remain under the client's control once delivery and the corresponding payments are complete."
+          "answer": "The proposal defines ownership and access. After delivery and payment, the client controls the agreed assets."
         },
         {
           "question": "What happens after launch?",
-          "answer": "The engagement includes launch and the agreed handoff support. If you need maintenance, improvements, or ongoing support, that is scoped separately based on your operation and required service level."
+          "answer": "Launch support is included. Ongoing maintenance is scoped separately."
         },
         {
           "question": "Can you integrate with the systems we already use?",
-          "answer": "In many cases, yes. I first review available APIs, access, data quality, and technical constraints to confirm what is feasible and which risks need to be considered."
+          "answer": "In many cases, yes. I first review access, data, APIs, and technical limits."
         }
       ],
-      "finalTitle": "Let us turn your operation into a competitive advantage.",
-      "finalIntro": "Start with a short conversation to identify the highest-value opportunity across sales, customer service, or operations.",
+      "finalTitle": "Improve your operation.",
+      "finalIntro": "Start with the highest-value opportunity.",
       "finalCta": "Start a WhatsApp diagnosis",
       "responseTime": "Same-day response on WhatsApp."
     }

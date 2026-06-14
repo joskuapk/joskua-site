@@ -47,12 +47,13 @@ export default function Hero() {
 
         <div className="negocios-hero__visual" aria-label={t("visualLabel")}>
           <Image
-            src="/joskuaBanner.svg"
-            alt={t("logoAlt")}
-            width={360}
-            height={92}
+            src="/negocios-connected-business.png"
+            alt={t("imageAlt")}
+            width={1536}
+            height={1024}
             priority
-            className="negocios-hero__logo"
+            sizes="(min-width: 900px) 42vw, calc(100vw - 2rem)"
+            className="negocios-hero__image"
           />
           <div className="negocios-signal-grid">
             <div>
