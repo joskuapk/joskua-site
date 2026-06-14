@@ -78,7 +78,7 @@ export default async function RootLayout({
       >
         <IntlProviderWrapper messages={messages} lang={lang}>
           <Header />
-          <main className="w-full flex flex-col items-center justify-start pt-20">
+          <main className="w-full flex flex-col items-center justify-start pt-[4.5rem] sm:pt-20">
             {children}
           </main>
           <Footer />

@@ -224,6 +224,12 @@
     }
   },
   "Negocios": {
+    "header": {
+      "home": "Go to the Joskua homepage",
+      "logoAlt": "Joskua",
+      "languageSelector": "Select language",
+      "whatsappCta": "Chat on WhatsApp"
+    },
     "meta": {
       "title": "Technology Consulting for SMBs | Joskua Olivares",
       "description": "Technology consulting, business automation, e-commerce, and AI assistants for SMBs that want to sell more and operate better."
@@ -313,7 +319,7 @@
       "eyebrow": "About Joskua",
       "title": "From international technology leadership to strategic ally for Mexican businesses.",
       "description": "After leading and building technology for teams across countries, I now focus that experience on helping Mexican SMBs scale through practical engineering: clear systems, useful automation, and technical decisions connected to the business.",
-      "imageAlt": "Joskua monogram"
+      "imageAlt": "Technology consultant collaborating with Mexican small-business owners on digital solutions"
     },
     "faq": {
       "eyebrow": "FAQ",

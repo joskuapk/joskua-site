@@ -224,6 +224,12 @@
     }
   },
   "Negocios": {
+    "header": {
+      "home": "Ir al inicio de Joskua",
+      "logoAlt": "Joskua",
+      "languageSelector": "Seleccionar idioma",
+      "whatsappCta": "Hablar por WhatsApp"
+    },
     "meta": {
       "title": "Consultoría Tecnológica para Negocios | Joskua Olivares",
       "description": "Consultoría tecnológica, automatización para negocios, e-commerce y asistentes de IA para PyMEs mexicanas que quieren vender más y operar mejor."
@@ -313,7 +319,7 @@
       "eyebrow": "Sobre Joskua",
       "title": "De liderazgo tecnológico internacional a aliado estratégico para negocios mexicanos.",
       "description": "Después de liderar y construir tecnología para equipos en distintos países, enfoco esa experiencia en ayudar a PyMEs mexicanas a escalar con ingeniería práctica: sistemas claros, automatización útil y decisiones técnicas conectadas al negocio.",
-      "imageAlt": "Monograma de Joskua"
+      "imageAlt": "Consultor tecnológico colaborando con dueños de pequeños negocios mexicanos en soluciones digitales"
     },
     "faq": {
       "eyebrow": "Preguntas frecuentes",

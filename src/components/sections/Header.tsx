@@ -1,7 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { getWhatsAppHref } from "@/config/contact";
 
 const locales = ["en", "es"];
 
@@ -19,34 +22,72 @@ function localizedHref(pathname: string, locale: string) {
 
 export function Header() {
   const pathname = usePathname();
+  const locale = useLocale();
+  const t = useTranslations("Negocios.header");
   const englishHref = localizedHref(pathname, "en");
   const spanishHref = localizedHref(pathname, "es");
+  const homeHref = `/${locale}`;
+  const isNegocios = pathname.endsWith("/negocios");
 
   return (
-    <header className="fixed top-0 left-0 w-full h-20 px-6 py-4 flex items-center justify-between z-50 bg-deep-blue">
-      <img src="/joskuaBanner.svg" alt="Joskua logo" className="h-10 w-auto" />
+    <header className="site-header">
+      <Link href={homeHref} className="site-header__logo" aria-label={t("home")}>
+        <Image
+          src="/joskuaBanner.svg"
+          alt={t("logoAlt")}
+          width={360}
+          height={92}
+          className="site-header__logo-image"
+        />
+      </Link>
 
-      <div
-        aria-label="Language selector"
-        className="flex items-center gap-3 text-sm"
-      >
+      <div className="site-header__actions">
+        {isNegocios && (
+          <Link
+            href={getWhatsAppHref()}
+            className="site-header__cta"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("whatsappCta")}
+          </Link>
+        )}
+
+        <nav aria-label={t("languageSelector")} className="site-language">
         <Link
           href={englishHref}
-          className="flex items-center gap-3 hover:opacity-80"
+          className="site-language__link"
+          aria-current={locale === "en" ? "page" : undefined}
         >
-          <img src="/us-flag.png" alt="US flag" className="h-6 w-6" />
+          <Image
+            src="/us-flag.png"
+            alt=""
+            width={24}
+            height={24}
+            className="site-language__flag"
+          />
           <span>EN</span>
         </Link>
 
-        <span className="opacity-50">|</span>
+        <span className="site-language__divider" aria-hidden="true">
+          /
+        </span>
 
         <Link
           href={spanishHref}
-          className="flex items-center gap-3 hover:opacity-80"
+          className="site-language__link"
+          aria-current={locale === "es" ? "page" : undefined}
         >
-          <img src="/mexico-flag.png" alt="Mexico flag" className="h-6 w-6" />
+          <Image
+            src="/mexico-flag.png"
+            alt=""
+            width={24}
+            height={24}
+            className="site-language__flag"
+          />
           <span>ES</span>
         </Link>
+        </nav>
       </div>
     </header>
   );
