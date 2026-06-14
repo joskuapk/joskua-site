@@ -7,7 +7,8 @@ import { getWhatsAppHref } from "@/config/contact";
 
 export default function Hero() {
   const t = useTranslations("Negocios.hero");
-  const whatsappHref = getWhatsAppHref();
+  const contactT = useTranslations("Negocios.contact");
+  const whatsappHref = getWhatsAppHref(contactT("whatsappMessage"));
 
   return (
     <section className="negocios-hero">
@@ -16,12 +17,31 @@ export default function Hero() {
           <p className="negocios-eyebrow">{t("eyebrow")}</p>
           <h1>{t("headline")}</h1>
           <p className="negocios-lede">{t("subheadline")}</p>
+          <p className="negocios-diagnosis-note">{t("diagnosisNote")}</p>
 
           <div className="negocios-hero__actions">
-            <Link href={whatsappHref} className="negocios-button">
+            <Link
+              href={whatsappHref}
+              className="negocios-button"
+              target="_blank"
+              rel="noreferrer"
+              data-cta="whatsapp"
+              data-cta-location="hero"
+            >
               {t("cta")}
             </Link>
             <span>{t("responseTime")}</span>
+            <Link
+              href={`mailto:${contactT("email")}`}
+              className="negocios-text-link"
+              data-cta="email"
+              data-cta-location="hero-secondary"
+            >
+              {contactT("emailCta")}
+            </Link>
+            <span className="negocios-contact-note">
+              {contactT("emailExpectation")}
+            </span>
           </div>
         </div>
 
@@ -55,6 +75,10 @@ export default function Hero() {
         href={whatsappHref}
         className="negocios-whatsapp"
         aria-label={t("floatingCta")}
+        target="_blank"
+        rel="noreferrer"
+        data-cta="whatsapp"
+        data-cta-location="floating"
       >
         <svg
           aria-hidden="true"

@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import FAQ from "@/components/negocios/FAQ";
 import Features from "@/components/negocios/Features";
 import Hero from "@/components/negocios/Hero";
 import PortfolioCard from "@/components/negocios/PortfolioCard";
+import { getWhatsAppHref } from "@/config/contact";
 
 type PortfolioItem = {
   title: string;
@@ -14,9 +16,16 @@ type PortfolioItem = {
   emphasis: string;
 };
 
+type ProcessItem = {
+  title: string;
+  description: string;
+};
+
 export default function NegociosLanding() {
   const t = useTranslations("Negocios");
   const portfolio = t.raw("portfolio.items") as PortfolioItem[];
+  const process = t.raw("process.items") as ProcessItem[];
+  const whatsappHref = getWhatsAppHref(t("contact.whatsappMessage"));
 
   return (
     <div className="consulting-landing">
@@ -24,6 +33,34 @@ export default function NegociosLanding() {
 
       <Features namespace="painPoints" variant="pain" />
       <Features namespace="services" />
+
+      <section
+        className="negocios-section negocios-conversion"
+        aria-labelledby="negocios-mid-cta-title"
+      >
+        <div className="negocios-container">
+          <div className="negocios-conversion__panel">
+            <div>
+              <p className="negocios-eyebrow">{t("midCta.eyebrow")}</p>
+              <h2 id="negocios-mid-cta-title">{t("midCta.title")}</h2>
+              <p>{t("midCta.description")}</p>
+            </div>
+            <div className="negocios-conversion__action">
+              <Link
+                href={whatsappHref}
+                className="negocios-button"
+                target="_blank"
+                rel="noreferrer"
+                data-cta="whatsapp"
+                data-cta-location="mid-page"
+              >
+                {t("midCta.cta")}
+              </Link>
+              <span>{t("hero.responseTime")}</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         className="negocios-section negocios-section--portfolio"
@@ -47,6 +84,29 @@ export default function NegociosLanding() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section
+        className="negocios-section negocios-process"
+        aria-labelledby="negocios-process-title"
+      >
+        <div className="negocios-container">
+          <div className="negocios-section__header">
+            <p className="negocios-eyebrow">{t("process.eyebrow")}</p>
+            <h2 id="negocios-process-title">{t("process.title")}</h2>
+            <p>{t("process.intro")}</p>
+          </div>
+
+          <ol className="negocios-process__grid">
+            {process.map((item, index) => (
+              <li key={item.title}>
+                <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 

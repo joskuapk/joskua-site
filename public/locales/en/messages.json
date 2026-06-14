@@ -234,13 +234,20 @@
       "title": "Technology Consulting for SMBs | Joskua Olivares",
       "description": "Technology consulting, business automation, e-commerce, and AI assistants for SMBs that want to sell more and operate better."
     },
+    "contact": {
+      "whatsappMessage": "Hi Joskua, I saw your business services page and would like to discuss an improvement opportunity.",
+      "email": "joskua.olivares@gmail.com",
+      "emailCta": "Send an email inquiry",
+      "emailExpectation": "For less time-sensitive inquiries, email works well. You can expect a reply within one week."
+    },
     "hero": {
       "eyebrow": "Strategic technology ally for SMBs",
-      "headline": "Technology so your business sells more and you work less.",
-      "subheadline": "I digitize your sales and automate customer support with strategic solutions designed to grow.",
-      "cta": "Book a WhatsApp diagnosis",
-      "floatingCta": "Open WhatsApp to book a strategic consultation",
-      "responseTime": "Direct response on WhatsApp",
+      "headline": "Digital systems to help your business sell, serve, and operate better.",
+      "subheadline": "I help SMBs turn websites, WhatsApp, integrations, and automation into practical business tools.",
+      "diagnosisNote": "The initial WhatsApp diagnosis is a short conversation to identify the highest-value opportunity and define the next step.",
+      "cta": "Start a WhatsApp diagnosis",
+      "floatingCta": "Open WhatsApp to start a diagnosis",
+      "responseTime": "Same-day response on WhatsApp.",
       "visualLabel": "Business technology solutions summary",
       "logoAlt": "Joskua Olivares",
       "signals": {
@@ -249,8 +256,8 @@
           "label": "Automated support"
         },
         "commerce": {
-          "value": "7 days",
-          "label": "Functional e-commerce"
+          "value": "Built to fit",
+          "label": "Web and e-commerce"
         },
         "support": {
           "value": "Less manual",
@@ -278,23 +285,29 @@
       ]
     },
     "services": {
-      "eyebrow": "Service pillars",
-      "title": "Practical solutions to sell, support, and operate better.",
-      "intro": "Strategy defines what to build first; engineering makes sure it works in the real world.",
+      "eyebrow": "Service areas",
+      "title": "Technology focused on concrete business outcomes.",
+      "intro": "Each project starts with a commercial or operational priority, then uses the right solution instead of a rigid package.",
       "items": [
         {
           "title": "Digital Sales",
-          "description": "E-commerce, professional websites, and fast web experiences that turn trust into business opportunities."
+          "description": "Professional websites and e-commerce that clarify your offer, build trust, and make it easier to buy or get in touch."
         },
         {
-          "title": "Support Intelligence",
-          "description": "AI assistants for WhatsApp that answer common questions, qualify leads, and keep the conversation moving."
+          "title": "Intelligent Customer Service",
+          "description": "WhatsApp and customer-service automation that answers questions, guides prospects, and makes follow-up more consistent."
         },
         {
           "title": "Operational Efficiency",
-          "description": "Process automation, integrations, and custom administrative software to reduce repetitive work."
+          "description": "Integrations, internal tools, and process automation that reduce repeated data entry, errors, and manual work."
         }
       ]
+    },
+    "midCta": {
+      "eyebrow": "First step",
+      "title": "Let us identify where technology can create the most value.",
+      "description": "In a short WhatsApp conversation, we review your context, the main point of friction, and the opportunity worth prioritizing.",
+      "cta": "Talk on WhatsApp"
     },
     "portfolio": {
       "eyebrow": "Strategic case studies",
@@ -312,6 +325,29 @@
           "description": "A functional store ready in one week with payments, billing, and shipping, prioritizing speed to market without losing transaction readiness.",
           "metric": "7 days",
           "emphasis": "Payments, billing, and shipping"
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "How delivery works",
+      "title": "A clear path from opportunity to adoption.",
+      "intro": "Scope and pace adjust to the project while priorities and decisions remain visible throughout.",
+      "items": [
+        {
+          "title": "Diagnosis",
+          "description": "We understand the business, the problem, and the highest-value opportunity."
+        },
+        {
+          "title": "Proposal and priorities",
+          "description": "We define scope, work order, estimated timing, and success criteria."
+        },
+        {
+          "title": "Build and integration",
+          "description": "We develop, connect, and validate the solution against real operations."
+        },
+        {
+          "title": "Launch and guidance",
+          "description": "We put the system into use, support adoption, and agree on any ongoing support."
         }
       ]
     },
@@ -336,11 +372,24 @@
         {
           "question": "I am not technical. Will I be able to use it?",
           "answer": "Yes. The solution should adapt to your operation, not the other way around. Delivery includes clarity, guidance, and decisions designed for real people."
+        },
+        {
+          "question": "Will my business own the delivered system?",
+          "answer": "Ownership and access are made explicit in the proposal. As a working principle, the agreed deliverables and project accounts remain under the client's control once delivery and the corresponding payments are complete."
+        },
+        {
+          "question": "What happens after launch?",
+          "answer": "The engagement includes launch and the agreed handoff support. If you need maintenance, improvements, or ongoing support, that is scoped separately based on your operation and required service level."
+        },
+        {
+          "question": "Can you integrate with the systems we already use?",
+          "answer": "In many cases, yes. I first review available APIs, access, data quality, and technical constraints to confirm what is feasible and which risks need to be considered."
         }
       ],
       "finalTitle": "Let us turn your operation into a competitive advantage.",
-      "finalIntro": "Book a short conversation to identify what technology can improve sales, support, or operations in your business.",
-      "finalCta": "Book a strategic consultation on WhatsApp"
+      "finalIntro": "Start with a short conversation to identify the highest-value opportunity across sales, customer service, or operations.",
+      "finalCta": "Start a WhatsApp diagnosis",
+      "responseTime": "Same-day response on WhatsApp."
     }
   },
   "footer": {

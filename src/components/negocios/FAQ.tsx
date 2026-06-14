@@ -11,8 +11,9 @@ type FAQItem = {
 
 export default function FAQ() {
   const t = useTranslations("Negocios.faq");
+  const contactT = useTranslations("Negocios.contact");
   const items = t.raw("items") as FAQItem[];
-  const whatsappHref = getWhatsAppHref();
+  const whatsappHref = getWhatsAppHref(contactT("whatsappMessage"));
 
   return (
     <section
@@ -37,9 +38,17 @@ export default function FAQ() {
         <div className="negocios-final-cta">
           <h2>{t("finalTitle")}</h2>
           <p>{t("finalIntro")}</p>
-          <Link href={whatsappHref} className="negocios-button">
+          <Link
+            href={whatsappHref}
+            className="negocios-button"
+            target="_blank"
+            rel="noreferrer"
+            data-cta="whatsapp"
+            data-cta-location="final"
+          >
             {t("finalCta")}
           </Link>
+          <span>{t("responseTime")}</span>
         </div>
       </div>
     </section>

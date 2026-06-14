@@ -234,13 +234,20 @@
       "title": "Consultoría Tecnológica para Negocios | Joskua Olivares",
       "description": "Consultoría tecnológica, automatización para negocios, e-commerce y asistentes de IA para PyMEs mexicanas que quieren vender más y operar mejor."
     },
+    "contact": {
+      "whatsappMessage": "Hola Joskua, vi tu sitio de negocios y me interesa conversar sobre una oportunidad de mejora.",
+      "email": "joskua.olivares@gmail.com",
+      "emailCta": "Enviar consulta por correo",
+      "emailExpectation": "Para consultas menos urgentes, puedes escribir por correo. Recibirás respuesta en un plazo de una semana."
+    },
     "hero": {
       "eyebrow": "Aliado tecnológico estratégico para PyMEs",
-      "headline": "Tecnología para que tu negocio venda más y tú trabajes menos.",
-      "subheadline": "Digitalizo tus ventas y automatizo tu atención al cliente con soluciones estratégicas diseñadas para crecer.",
-      "cta": "Agendar diagnóstico por WhatsApp",
-      "floatingCta": "Abrir WhatsApp para agendar consultoría estratégica",
-      "responseTime": "Respuesta directa por WhatsApp",
+      "headline": "Sistemas digitales para vender, atender y operar mejor.",
+      "subheadline": "Ayudo a PyMEs a convertir sitios web, WhatsApp, integraciones y automatización en herramientas claras para el negocio.",
+      "diagnosisNote": "El diagnóstico inicial por WhatsApp es una conversación breve para identificar la oportunidad de mayor valor y definir el siguiente paso.",
+      "cta": "Iniciar diagnóstico por WhatsApp",
+      "floatingCta": "Abrir WhatsApp para iniciar un diagnóstico",
+      "responseTime": "Respuesta por WhatsApp el mismo día.",
       "visualLabel": "Resumen de soluciones tecnológicas para negocios",
       "logoAlt": "Joskua Olivares",
       "signals": {
@@ -249,8 +256,8 @@
           "label": "Atención automatizada"
         },
         "commerce": {
-          "value": "7 días",
-          "label": "E-commerce funcional"
+          "value": "A medida",
+          "label": "Web y e-commerce"
         },
         "support": {
           "value": "Menos manual",
@@ -278,23 +285,29 @@
       ]
     },
     "services": {
-      "eyebrow": "Pilares de servicio",
-      "title": "Soluciones prácticas para vender, atender y operar mejor.",
-      "intro": "La estrategia define qué construir primero; la ingeniería se encarga de que funcione en el mundo real.",
+      "eyebrow": "Áreas de servicio",
+      "title": "Tecnología enfocada en resultados concretos del negocio.",
+      "intro": "Cada proyecto parte de una prioridad comercial u operativa; después se elige la solución adecuada, sin paquetes rígidos.",
       "items": [
         {
-          "title": "Venta Digital",
-          "description": "E-commerce, sitios profesionales y experiencias web rápidas que convierten confianza en oportunidades comerciales."
+          "title": "Venta digital",
+          "description": "Sitios profesionales y e-commerce que presentan tu oferta con claridad, generan confianza y facilitan la compra o el contacto."
         },
         {
-          "title": "Inteligencia en Atención",
-          "description": "Asistentes de IA para WhatsApp que responden preguntas frecuentes, califican prospectos y mantienen activa la conversación."
+          "title": "Atención inteligente",
+          "description": "Automatización de WhatsApp y servicio al cliente para responder preguntas, orientar prospectos y dar seguimiento con mayor consistencia."
         },
         {
-          "title": "Eficiencia Operativa",
-          "description": "Automatización de procesos, integraciones y software administrativo a la medida para reducir trabajo repetitivo."
+          "title": "Eficiencia operativa",
+          "description": "Integraciones, herramientas internas y automatización de procesos para reducir capturas repetidas, errores y trabajo manual."
         }
       ]
+    },
+    "midCta": {
+      "eyebrow": "Primer paso",
+      "title": "Identifiquemos dónde la tecnología puede aportar más valor.",
+      "description": "En una conversación breve por WhatsApp revisamos tu contexto, la fricción principal y la oportunidad que conviene priorizar.",
+      "cta": "Conversar por WhatsApp"
     },
     "portfolio": {
       "eyebrow": "Casos estratégicos",
@@ -312,6 +325,29 @@
           "description": "Tienda funcional lista en una semana con pagos, facturación y envíos, priorizando salida rápida al mercado sin sacrificar la operación transaccional.",
           "metric": "7 días",
           "emphasis": "Pagos, facturación y envíos"
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Forma de trabajo",
+      "title": "Un proceso claro, desde la oportunidad hasta la adopción.",
+      "intro": "El alcance y el ritmo se ajustan al proyecto, manteniendo visibles las prioridades y decisiones.",
+      "items": [
+        {
+          "title": "Diagnóstico",
+          "description": "Entendemos el negocio, el problema y la oportunidad de mayor valor."
+        },
+        {
+          "title": "Propuesta y prioridades",
+          "description": "Definimos alcance, orden de trabajo, tiempos estimados y criterios de éxito."
+        },
+        {
+          "title": "Construcción e integración",
+          "description": "Desarrollamos, conectamos y validamos la solución con la operación real."
+        },
+        {
+          "title": "Lanzamiento y acompañamiento",
+          "description": "Ponemos el sistema en marcha, facilitamos su adopción y acordamos el soporte posterior."
         }
       ]
     },
@@ -336,11 +372,24 @@
         {
           "question": "No soy técnico, ¿voy a poder usarlo?",
           "answer": "Sí. La solución debe adaptarse a tu operación, no al revés. La entrega incluye claridad de uso, acompañamiento y decisiones pensadas para personas reales."
+        },
+        {
+          "question": "¿El sistema queda a nombre de mi negocio?",
+          "answer": "La propiedad y los accesos se dejan claros en la propuesta. Como regla de trabajo, los entregables acordados y las cuentas del proyecto quedan bajo control del cliente al completar la entrega y los pagos correspondientes."
+        },
+        {
+          "question": "¿Qué pasa después del lanzamiento?",
+          "answer": "El cierre incluye la puesta en marcha y el acompañamiento acordado. Si necesitas mantenimiento, mejoras o soporte continuo, se define por separado según la operación y el nivel de atención requerido."
+        },
+        {
+          "question": "¿Puedes integrarte con los sistemas que ya usamos?",
+          "answer": "En muchos casos, sí. Primero se revisan las APIs, accesos, calidad de datos y límites técnicos del sistema existente para confirmar qué integración es viable y qué riesgos hay que considerar."
         }
       ],
       "finalTitle": "Convirtamos tu operación en una ventaja competitiva.",
-      "finalIntro": "Agenda una conversación breve para detectar qué tecnología puede impactar ventas, atención u operación en tu negocio.",
-      "finalCta": "Agendar consultoría estratégica por WhatsApp"
+      "finalIntro": "Inicia con una conversación breve para identificar la oportunidad de mayor valor en ventas, atención u operación.",
+      "finalCta": "Iniciar diagnóstico por WhatsApp",
+      "responseTime": "Respuesta por WhatsApp el mismo día."
     }
   },
   "footer": {
