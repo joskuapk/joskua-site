@@ -231,8 +231,9 @@
       "whatsappCta": "Chat on WhatsApp"
     },
     "meta": {
-      "title": "Technology Consulting for SMBs | Joskua Olivares",
-      "description": "Technology consulting, business automation, e-commerce, and AI assistants for SMBs that want to sell more and operate better."
+      "title": "Technology Consulting for SMBs in Mexico | Joskua",
+      "description": "Web development, e-commerce, integrations, and automation for SMBs in Mexico, with technology consulting based in Mexico City.",
+      "imageAlt": "Connected digital systems in Joskua's green, navy, and cyan brand colors"
     },
     "contact": {
       "whatsappMessage": "Hi Joskua, I saw your business services page and would like to discuss an improvement opportunity.",
@@ -310,23 +311,43 @@
       "cta": "Talk on WhatsApp"
     },
     "portfolio": {
-      "eyebrow": "Strategic case studies",
-      "title": "Results built with speed and technical judgment.",
-      "intro": "Projects where the priority was solving a concrete commercial problem, not just delivering a pretty screen.",
+      "eyebrow": "Delivery evidence",
+      "title": "Delivered projects and verifiable client context.",
+      "intro": "Each case separates work delivered by Joskua from operating figures published by the client.",
       "items": [
         {
-          "title": "Factrónica — Digital Modernization",
-          "description": "Transformation from an obsolete site into a professional mobile-first experience designed to communicate trust, authority, and clarity from the first contact.",
+          "title": "Factrónica — website redesign and rebuild",
           "metric": "Mobile-first",
-          "emphasis": "Trust and authority"
+          "emphasis": "Corporate website",
+          "projectLabel": "Delivered by Joskua",
+          "projectResult": "Redesigned and rebuilt the corporate website, replacing an outdated, non-responsive HTML experience with a modern mobile-responsive site.",
+          "clientContextLabel": "Operating scale published by Factrónica",
+          "clientContext": [
+            "More than 400 companies served.",
+            "600 million CFDIs issued annually.",
+            "More than 15 years of experience.",
+            "40% operating-cost savings reported by Factrónica."
+          ],
+          "href": "https://www.factronicamx.com/",
+          "linkLabel": "Visit Factrónica's live website"
         },
         {
-          "title": "Consumible Médico — E-commerce in 7 Days",
-          "description": "A functional store ready in one week with payments, billing, and shipping, prioritizing speed to market without losing transaction readiness.",
+          "title": "Consumible Médico — e-commerce delivery",
           "metric": "7 days",
-          "emphasis": "Payments, billing, and shipping"
+          "emphasis": "Delivery timeline",
+          "projectLabel": "Delivery result",
+          "projectResult": "Joskua delivered the website and core e-commerce setup within 7 days. This timeline describes project execution, not subsequent company-wide business results.",
+          "clientContextLabel": "Capabilities visible on the site",
+          "clientContext": [
+            "Catalog with medical-product categories and product pages.",
+            "Search, cart, customer account, and checkout flow.",
+            "WhatsApp contact and access to billing."
+          ],
+          "href": "https://consumiblemedico.mx/",
+          "linkLabel": "Visit Consumible Médico's live e-commerce site"
         }
-      ]
+      ],
+      "disclaimer": "Factrónica's figures describe the scale and results the company publishes about its own operation. They are client context and are not attributed to Joskua's website redesign. For Consumible Médico, the 7-day figure refers only to the project's delivery timeline."
     },
     "process": {
       "eyebrow": "How delivery works",
@@ -353,8 +374,8 @@
     },
     "about": {
       "eyebrow": "About Joskua",
-      "title": "From international technology leadership to strategic ally for Mexican businesses.",
-      "description": "After leading and building technology for teams across countries, I now focus that experience on helping Mexican SMBs scale through practical engineering: clear systems, useful automation, and technical decisions connected to the business.",
+      "title": "Technology consulting from Mexico City for businesses in Mexico.",
+      "description": "I am Joskua Olivares. I apply software development and technology leadership experience to help SMBs with websites, e-commerce, integrations, and practical automation, with explicit scope and delivery criteria.",
       "imageAlt": "Technology consultant collaborating with Mexican small-business owners on digital solutions"
     },
     "faq": {

@@ -20,7 +20,7 @@ export default function Footer() {
         {t("shortVersion")}{" "}
         <a
           href="/CV_Joskua_Olivares.pdf"
-          className="underline hover:text-white transition-colors"
+          className="inline-flex min-h-11 items-center px-1 underline hover:text-white transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,7 +29,7 @@ export default function Footer() {
         |
         <a
           href="mailto:joskua.olivares@gmail.com"
-          className="underline hover:text-white"
+          className="inline-flex min-h-11 items-center px-1 underline hover:text-white"
         >
           {t("emailMe")}
         </a>

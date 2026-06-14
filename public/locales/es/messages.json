@@ -231,8 +231,9 @@
       "whatsappCta": "Hablar por WhatsApp"
     },
     "meta": {
-      "title": "Consultoría Tecnológica para Negocios | Joskua Olivares",
-      "description": "Consultoría tecnológica, automatización para negocios, e-commerce y asistentes de IA para PyMEs mexicanas que quieren vender más y operar mejor."
+      "title": "Consultoría tecnológica para PyMEs en México | Joskua",
+      "description": "Desarrollo web, e-commerce, integraciones y automatización para PyMEs en México, con consultoría tecnológica desde Ciudad de México.",
+      "imageAlt": "Sistemas digitales conectados en los colores verde, azul marino y cian de Joskua"
     },
     "contact": {
       "whatsappMessage": "Hola Joskua, vi tu sitio de negocios y me interesa conversar sobre una oportunidad de mejora.",
@@ -310,23 +311,43 @@
       "cta": "Conversar por WhatsApp"
     },
     "portfolio": {
-      "eyebrow": "Casos estratégicos",
-      "title": "Resultados construidos con velocidad y criterio técnico.",
-      "intro": "Proyectos donde la prioridad fue resolver un problema comercial concreto, no solo entregar una pantalla bonita.",
+      "eyebrow": "Evidencia de entrega",
+      "title": "Proyectos realizados y contexto verificable del cliente.",
+      "intro": "Cada caso separa el trabajo entregado por Joskua de las cifras operativas publicadas por el cliente.",
       "items": [
         {
-          "title": "Factrónica — Modernización Digital",
-          "description": "Transformación de un sitio obsoleto en una experiencia profesional mobile-first, diseñada para comunicar confianza, autoridad y claridad desde el primer contacto.",
+          "title": "Factrónica — rediseño y reconstrucción web",
           "metric": "Mobile-first",
-          "emphasis": "Confianza y autoridad"
+          "emphasis": "Sitio corporativo",
+          "projectLabel": "Entrega de Joskua",
+          "projectResult": "Rediseño y reconstrucción del sitio corporativo para sustituir una experiencia HTML obsoleta y no responsiva por un sitio moderno y adaptable a móviles.",
+          "clientContextLabel": "Escala operativa publicada por Factrónica",
+          "clientContext": [
+            "Más de 400 empresas atendidas.",
+            "600 millones de CFDI emitidos anualmente.",
+            "Más de 15 años de experiencia.",
+            "40% de ahorro en costos operativos reportado por Factrónica."
+          ],
+          "href": "https://www.factronicamx.com/",
+          "linkLabel": "Visitar el sitio en vivo de Factrónica"
         },
         {
-          "title": "Consumible Médico — E-commerce en 7 días",
-          "description": "Tienda funcional lista en una semana con pagos, facturación y envíos, priorizando salida rápida al mercado sin sacrificar la operación transaccional.",
+          "title": "Consumible Médico — entrega de e-commerce",
           "metric": "7 días",
-          "emphasis": "Pagos, facturación y envíos"
+          "emphasis": "Plazo de entrega",
+          "projectLabel": "Resultado de entrega",
+          "projectResult": "Joskua entregó el sitio y la base del e-commerce en un plazo de 7 días. El plazo describe la ejecución del proyecto, no resultados comerciales posteriores.",
+          "clientContextLabel": "Capacidades visibles del sitio",
+          "clientContext": [
+            "Catálogo con categorías y fichas de productos médicos.",
+            "Búsqueda, carrito, cuenta de cliente y flujo de compra.",
+            "Contacto por WhatsApp y acceso a facturación."
+          ],
+          "href": "https://consumiblemedico.mx/",
+          "linkLabel": "Visitar el e-commerce en vivo de Consumible Médico"
         }
-      ]
+      ],
+      "disclaimer": "Las cifras de Factrónica describen la escala y los resultados que la empresa publica sobre su propia operación. Se muestran como contexto del cliente y no se atribuyen al rediseño realizado por Joskua. En Consumible Médico, el dato de 7 días corresponde únicamente al plazo de entrega del proyecto."
     },
     "process": {
       "eyebrow": "Forma de trabajo",
@@ -353,8 +374,8 @@
     },
     "about": {
       "eyebrow": "Sobre Joskua",
-      "title": "De liderazgo tecnológico internacional a aliado estratégico para negocios mexicanos.",
-      "description": "Después de liderar y construir tecnología para equipos en distintos países, enfoco esa experiencia en ayudar a PyMEs mexicanas a escalar con ingeniería práctica: sistemas claros, automatización útil y decisiones técnicas conectadas al negocio.",
+      "title": "Consultoría tecnológica desde Ciudad de México para negocios en México.",
+      "description": "Soy Joskua Olivares. Aplico experiencia en desarrollo y liderazgo tecnológico para ayudar a PyMEs con sitios, e-commerce, integraciones y automatización práctica, siempre con alcance y criterios de entrega explícitos.",
       "imageAlt": "Consultor tecnológico colaborando con dueños de pequeños negocios mexicanos en soluciones digitales"
     },
     "faq": {

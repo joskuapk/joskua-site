@@ -11,9 +11,14 @@ import { getWhatsAppHref } from "@/config/contact";
 
 type PortfolioItem = {
   title: string;
-  description: string;
   metric: string;
   emphasis: string;
+  projectLabel: string;
+  projectResult: string;
+  clientContextLabel: string;
+  clientContext: string[];
+  href: string;
+  linkLabel: string;
 };
 
 type ProcessItem = {
@@ -78,12 +83,20 @@ export default function NegociosLanding() {
               <PortfolioCard
                 key={item.title}
                 title={item.title}
-                description={item.description}
                 metric={item.metric}
                 emphasis={item.emphasis}
+                projectLabel={item.projectLabel}
+                projectResult={item.projectResult}
+                clientContextLabel={item.clientContextLabel}
+                clientContext={item.clientContext}
+                href={item.href}
+                linkLabel={item.linkLabel}
               />
             ))}
           </div>
+          <p className="negocios-portfolio-disclaimer">
+            {t("portfolio.disclaimer")}
+          </p>
         </div>
       </section>
 

@@ -25,7 +25,7 @@ This is the personal portfolio of **Joskua**, a full-stack developer based in Me
 - **Hosted On**: [Vercel](https://vercel.com/)
   - CI/CD with GitHub integration
   - Auto-deploy on push to `main`
-- **Domain**: [joskua.space](https://www.joskua.space/)
+- **Domain**: [joskua.space](https://joskua.space/)
 - **Environment Variables**:
   - Securely managed in Vercel dashboard for API keys
 
