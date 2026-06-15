@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 type TextItem = {
@@ -30,6 +31,19 @@ export default function Features({
           <h2 id={`negocios-${namespace}-title`}>{t("title")}</h2>
           <p>{t("intro")}</p>
         </div>
+
+        {variant === "services" && (
+          <div className="negocios-services__visual">
+            <Image
+              src="/negocios-service-outcomes.png"
+              alt={t("imageAlt")}
+              width={1536}
+              height={1024}
+              sizes="(min-width: 900px) 72rem, calc(100vw - 2rem)"
+              className="negocios-services__image"
+            />
+          </div>
+        )}
 
         <div
           className={
