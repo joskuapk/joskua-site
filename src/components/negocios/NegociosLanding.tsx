@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import FAQ from "@/components/negocios/FAQ";
 import Features from "@/components/negocios/Features";
 import Hero from "@/components/negocios/Hero";
 import PortfolioCard from "@/components/negocios/PortfolioCard";
-import { getWhatsAppHref } from "@/config/contact";
+import { getNegociosWhatsAppPath } from "@/config/contact";
 
 type PortfolioItem = {
   title: string;
@@ -27,10 +27,11 @@ type ProcessItem = {
 };
 
 export default function NegociosLanding() {
+  const locale = useLocale();
   const t = useTranslations("Negocios");
   const portfolio = t.raw("portfolio.items") as PortfolioItem[];
   const process = t.raw("process.items") as ProcessItem[];
-  const whatsappHref = getWhatsAppHref(t("contact.whatsappMessage"));
+  const whatsappHref = getNegociosWhatsAppPath(locale);
 
   return (
     <div className="consulting-landing">
@@ -54,8 +55,6 @@ export default function NegociosLanding() {
               <Link
                 href={whatsappHref}
                 className="negocios-button"
-                target="_blank"
-                rel="noreferrer"
                 data-cta="whatsapp"
                 data-cta-location="mid-page"
               >

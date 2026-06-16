@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getWhatsAppHref } from "@/config/contact";
+import { useLocale, useTranslations } from "next-intl";
+import { getNegociosWhatsAppPath } from "@/config/contact";
 
 type FAQItem = {
   question: string;
@@ -10,10 +10,10 @@ type FAQItem = {
 };
 
 export default function FAQ() {
+  const locale = useLocale();
   const t = useTranslations("Negocios.faq");
-  const contactT = useTranslations("Negocios.contact");
   const items = t.raw("items") as FAQItem[];
-  const whatsappHref = getWhatsAppHref(contactT("whatsappMessage"));
+  const whatsappHref = getNegociosWhatsAppPath(locale);
 
   return (
     <section
@@ -41,8 +41,6 @@ export default function FAQ() {
           <Link
             href={whatsappHref}
             className="negocios-button"
-            target="_blank"
-            rel="noreferrer"
             data-cta="whatsapp"
             data-cta-location="final"
           >

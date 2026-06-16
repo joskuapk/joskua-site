@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getWhatsAppHref } from "@/config/contact";
+import { useLocale, useTranslations } from "next-intl";
+import { getNegociosWhatsAppPath } from "@/config/contact";
 
 export default function Hero() {
+  const locale = useLocale();
   const t = useTranslations("Negocios.hero");
   const contactT = useTranslations("Negocios.contact");
-  const whatsappHref = getWhatsAppHref(contactT("whatsappMessage"));
+  const whatsappHref = getNegociosWhatsAppPath(locale);
 
   return (
     <section className="negocios-hero">
@@ -23,8 +24,6 @@ export default function Hero() {
             <Link
               href={whatsappHref}
               className="negocios-button"
-              target="_blank"
-              rel="noreferrer"
               data-cta="whatsapp"
               data-cta-location="hero"
             >
@@ -76,8 +75,6 @@ export default function Hero() {
         href={whatsappHref}
         className="negocios-whatsapp"
         aria-label={t("floatingCta")}
-        target="_blank"
-        rel="noreferrer"
         data-cta="whatsapp"
         data-cta-location="floating"
       >

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { getWhatsAppHref } from "@/config/contact";
+import { getNegociosWhatsAppPath } from "@/config/contact";
 
 const locales = ["en", "es"];
 
@@ -24,7 +24,6 @@ export function Header() {
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("Negocios.header");
-  const contactT = useTranslations("Negocios.contact");
   const englishHref = localizedHref(pathname, "en");
   const spanishHref = localizedHref(pathname, "es");
   const homeHref = `/${locale}`;
@@ -45,10 +44,8 @@ export function Header() {
       <div className="site-header__actions">
         {isNegocios && (
           <Link
-            href={getWhatsAppHref(contactT("whatsappMessage"))}
+            href={getNegociosWhatsAppPath(locale)}
             className="site-header__cta"
-            target="_blank"
-            rel="noreferrer"
             data-cta="whatsapp"
             data-cta-location="header"
           >

@@ -676,6 +676,14 @@ kbd {
   box-shadow: 0 16px 38px rgba(0, 0, 0, 0.36);
 }
 
+.negocios-whatsapp-redirect {
+  display: grid;
+  width: 100%;
+  min-height: calc(100svh - 12rem);
+  place-items: center;
+  padding: 2rem;
+}
+
 @media (min-width: 640px) {
   .negocios-card-grid,
   .negocios-signal-grid {

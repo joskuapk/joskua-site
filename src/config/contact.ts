@@ -9,3 +9,7 @@ export function getWhatsAppHref(message = contactConfig.negociosWhatsAppMessage)
     message,
   )}`;
 }
+
+export function getNegociosWhatsAppPath(locale: string) {
+  return `/${locale}/negocios/whatsapp`;
+}
