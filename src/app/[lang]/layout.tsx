@@ -5,6 +5,7 @@ import Footer from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import IntlProviderWrapper from "@/components/common/IntlProviderWrapper";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 const fontDisplay = Silkscreen({
   weight: "400",
@@ -83,6 +84,7 @@ export default async function RootLayout({
           </main>
           <Footer />
         </IntlProviderWrapper>
+        <Analytics />
       </body>
     </html>
   );
