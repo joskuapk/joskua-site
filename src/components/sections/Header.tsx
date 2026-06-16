@@ -17,6 +17,10 @@ function localizedHref(pathname: string, locale: string) {
     return segments.join("/") || `/${locale}`;
   }
 
+  if (pathname === "/vcf") {
+    return `/${locale}`;
+  }
+
   return `/${locale}${pathname === "/" ? "" : pathname}`;
 }
 
